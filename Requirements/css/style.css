@@ -1,0 +1,28 @@
+body{
+  background-color: #fafafa;
+  color: #101010;
+}
+
+#content{
+  max-width: 900px;
+  margin: 50px auto;
+  font-size: 1.2em;
+}
+
+h1{
+  font: 2em 'Libre Franklin', Verdana, sans-serif;
+  text-align: center;
+}
+
+h2{
+  font: 1.5em 'Libre Franklin', Verdana, sans-serif;
+  text-align: center;
+}
+
+header{
+  margin-bottom: 0;
+}
+
+hr{
+  margin-top: -15px;
+}
