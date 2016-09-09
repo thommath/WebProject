@@ -8,6 +8,8 @@ Opprett bruker på Github
 naviger med cd (change directory) og ls (list) til mappen du ønsker å ha prosjektet under
 skriv "git clone https://github.com/thommath/WebProject.git"
 
+Første gangen dere prøver til å pushe til origin vil dere få feilmelding siden dere ikke har permissions til dette. Hvis dere sender meg brukernavn kan jeg gi dere dette tror jeg. 
+
 #Jobbing
 Skriv i konsollen "git fetch" for å hente ned nyeste versjon. Det er mulig du må merge og forklare hvorfor. For å komme ut av dette vinduet trykk esc->:->x->enter
 Utfør ditt arbeid
