@@ -1,0 +1,28 @@
+
+
+body{
+  margin: auto;
+  background-color: #fafafa;
+  max-width: 800px;
+}
+
+a{
+  color: inherit;
+}
+
+header{
+  margin: 1em 0 1em 0;
+  widh: 100%;
+  position: relative;
+}
+
+header img, header h1{
+  display: inline-block;
+}
+
+header h1{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
