@@ -12,8 +12,10 @@ Første gangen dere prøver til å pushe til origin vil dere få feilmelding sid
 
 #Jobbing
 Skriv i konsollen "git fetch" for å hente ned nyeste versjon. Det er mulig du må merge og forklare hvorfor. For å komme ut av dette vinduet trykk esc->:->x->enter
+Skriv git branch beskrivelse-av-hva-du-gjor
+skriv git checkout beskrivelse-av-hva-du-gjor
 Utfør ditt arbeid
-Skriv git add {berørte filer}
-Her kan du sjekke med git status for å se om alt ser riktig ut
+Skriv git add .
+Her kan du sjekke med "git status" for å se om alt ser riktig ut
 Skriv git commit -m "Hva du har gjort i gåseøyne". Første gangen må du skrive to linjer til som git forteller deg for, ikke vær redd bare gjør det. 
 Skriv git push origin for å pushe til nettet. Her må du logge, men det hjelper git deg igjennom
