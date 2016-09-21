@@ -35,3 +35,4 @@ Skriv git push origin for å pushe til nettet. Her må du logge, men det hjelper
 Det kan hende det kommer opp et vindu som er skummelt. Da skal du trykke esc -> :q! -> enter eller ctrl->X for å komme deg vekk fra det. Trenger ikke lagre
 
 test
+test
