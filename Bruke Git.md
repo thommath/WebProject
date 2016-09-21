@@ -22,10 +22,6 @@ Første gangen dere prøver til å pushe til origin vil dere få feilmelding sid
 <br>
 Skriv i konsollen "git fetch" for å hente ned nyeste versjon. Det er mulig du må merge og forklare hvorfor. For å komme ut av dette vinduet trykk esc->:->x->enter
 <br>
-(Skriv git branch beskrivelse-av-hva-du-gjor
-<br>
-skriv git checkout beskrivelse-av-hva-du-gjor) Does not work
-<br>
 Utfør ditt arbeid
 <br>
 Skriv git add .
