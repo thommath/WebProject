@@ -32,3 +32,4 @@ Skriv git commit -m "Hva du har gjort i gåseøyne". Første gangen må du skriv
 <br>
 Skriv git push origin for å pushe til nettet. Her må du logge, men det hjelper git deg igjennom
 <br>
+Det kan hende det kommer opp et vindu som er skummelt. Da skal du trykke esc -> :q! -> enter
