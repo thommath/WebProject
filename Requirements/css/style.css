@@ -97,6 +97,12 @@ header p{
   margin-left: -40px;
 }
 
+#arrow-link:hover, #arrow-link:visited, #arrow-link{
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
 #arrow-down{
   color: #aaa;
   font-size: 5em;
@@ -106,6 +112,7 @@ header p{
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
 }
+
 @media screen and (max-height: 480px) {
     header {
         position: relative;
@@ -126,21 +133,4 @@ header p{
   font-size: 1.1em;
   font-weight: 500;
   margin: 0.2em;
-}
-
-/*
-  Scrolling
-*/
-a[ id= "table-of-content" ]:target {
-    -webkit-transform: translateY( -1000px);
-    transform: translateY( -1000px );
-}
-
-a[ id= "galeria" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -500px );
-    transform: translateY( -500px );
-}
-a[ id= "contacto" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -1000px );
-    transform: translateY( -1000px );
 }
