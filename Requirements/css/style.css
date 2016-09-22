@@ -1,10 +1,15 @@
+body, html{
+  height: 100%;
+}
+
 body{
-  background-color: #fefefe;
-  color: #050505;
+  background-color: #fafafa;
+  color: #111;
 }
 
 #content{
-  max-width: 900px;
+  height: 100%;
+  max-width: 700px;
   margin: 50px auto;
   font-size: 1.2em;
 }
@@ -38,10 +43,19 @@ h4{
 }
 
 
+#frontpage{
+  height: 100% !important;
+  position: relative;
+  margin: auto;
+}
 
 header{
+  width: 100%;
   margin: 55% auto 10% auto;
+  position: absolute;
+  bottom: 200px;
 }
+
 
 header h1{
   font-size: 3em;
@@ -62,7 +76,11 @@ header p{
 }
 
 #arrow{
-  height: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -40px;
 }
 
 #arrow-down{
@@ -74,6 +92,17 @@ header p{
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
 }
+@media screen and (max-height: 480px) {
+    header {
+        position: relative;
+        margin: auto;
+        bottom: 0px;
+    }
+    #arrow{
+      display: none;
+    }
+}
+
 
 #table-of-content ol li{
   margin: 0.5em 0;
