@@ -3,8 +3,14 @@ body, html{
 }
 
 body{
+<<<<<<< HEAD
   background-color: #fafafa;
   color: #111;
+=======
+  background-color: #fefefe;
+  color: #050505;
+  font-family: Calibri, Verdana, sans-serif;
+>>>>>>> 90330c8f50c20a7e7c1263ad9144620c0fae3155
 }
 
 #content{
@@ -14,10 +20,23 @@ body{
   font-size: 1.2em;
 }
 
+#navn{
+  font-size: 14px;
+}
+
+}
+/* Link Section */
 a{
-  color: inherit;
+  color: blue;
   font-style: normal;
   text-decoration: none;
+}
+
+a:visited {
+  color:blue;
+}
+a:hover{
+  color:green;
 }
 
 article{

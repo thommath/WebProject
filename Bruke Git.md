@@ -35,5 +35,8 @@ Skriv git commit -m "Hva du har gjort i gåseøyne". Første gangen må du skriv
 Skriv git push origin for å pushe til nettet. Her må du logge, men det hjelper git deg igjennom
 <br>
 Det kan hende det kommer opp et vindu som er skummelt. Da skal du trykke esc -> :q! -> enter eller ctrl->X for å komme deg vekk fra det. Trenger ikke lagre
+<<<<<<< HEAD
 
 rebase?
+=======
+>>>>>>> 90330c8f50c20a7e7c1263ad9144620c0fae3155
