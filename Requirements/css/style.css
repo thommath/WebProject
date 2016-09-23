@@ -8,18 +8,10 @@ body{
   font-family: Calibri, Verdana, sans-serif;
 }
 
-#content{
-  height: 100%;
-  max-width: 700px;
-  margin: 50px auto;
-  font-size: 1.2em;
+ol, ul {
+  line-height: 1.5em;
 }
 
-#navn{
-  font-size: 14px;
-}
-
-}
 /* Link Section */
 a{
   color: blue;
@@ -33,7 +25,7 @@ a:visited {
 a:hover{
   color:green;
 }
-
+/* Headers and Articles*/
 article{
   margin: 5em 0;
 }
@@ -56,20 +48,12 @@ h4{
   color: #666;
 }
 
-
-#frontpage{
-  height: 100% !important;
-  position: relative;
-  margin: auto;
-}
-
 header{
   width: 100%;
   margin: 55% auto 10% auto;
   position: absolute;
   bottom: 200px;
 }
-
 
 header h1{
   font-size: 3em;
@@ -88,6 +72,8 @@ header p{
   text-align: center;
   font-size: 0.9em;
 }
+
+/*ID's and Classes*/
 
 #arrow{
   height: 200px;
@@ -113,6 +99,12 @@ header p{
   -ms-transition: all 1s ease;
 }
 
+#frontpage{
+  height: 100% !important;
+  position: relative;
+  margin: auto;
+}
+
 @media screen and (max-height: 480px) {
     header {
         position: relative;
@@ -133,4 +125,15 @@ header p{
   font-size: 1.1em;
   font-weight: 500;
   margin: 0.2em;
+}
+
+#content{
+  height: 100%;
+  max-width: 700px;
+  margin: 50px auto;
+  font-size: 1.2em;
+}
+
+#navn{
+  font-size: 11px;
 }
