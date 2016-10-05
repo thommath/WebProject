@@ -1,0 +1,10 @@
+html {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+h1, h2, h3, h4, {
+  border-bottom: 1px #416E85 solid;
+}
