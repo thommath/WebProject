@@ -16,6 +16,7 @@ function loadDoc(container, module, input=[]) {
 
 
 function setup(){
+  loadDoc(document.getElementById("header"), "header");
   var body = document.getElementById("box-container");
   loadDoc(body, "box", ["Digns", "Her er mye fin info"]);
   loadDoc(body, "box", ["Dumpeditt", "Wiho lorem ipseifmdsk fdsfj dsakd easd"]);
