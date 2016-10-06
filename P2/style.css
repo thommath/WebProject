@@ -2,9 +2,40 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-
 }
 
 h1, h2, h3, h4, {
-  border-bottom: 1px #416E85 solid;
+  font-family: inherit;
+}
+
+article {
+  font-family: Helvetica; sans-serif;
+}
+
+p {
+  font-family: inherit;
+  line-height: 1.2em;
+}
+
+/*Classes and ID's*/
+.mockups{
+  position: relative;
+  left: 5em;
+  width: 500px;
+  height: 500px;
+}
+
+#map{
+  position: relative;
+  left: 5em;
+  width: 500px;
+  height: 500px;
+}
+
+#pages > h4 { /*Alle h4 som er direct child av pages blir endret */
+  text-align: center;
+}
+
+#table > p{
+  text-align: center;
 }
