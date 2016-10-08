@@ -74,6 +74,10 @@ header p{
   font-size: 0.9em;
 }
 
+img{
+  max-width: 100%;
+}
+
 /*ID's and Classes*/
 
 #arrow{
@@ -151,8 +155,6 @@ header p{
 #map{
   position: relative;
   left: 5em;
-  width: 500px;
-  height: 500px;
 }
 
 #pages > h4 { /*Alle h4 som er direct child av pages blir endret */
