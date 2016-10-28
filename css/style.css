@@ -1,6 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
 
-
-#box-container > *{
+.box-container{
+  background-color: #e6a12b;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 20px 0;
+}
+.box{
   display: inline-block;
-  width: 200px;
+  max-width: 300px;
+  width: 25%;
+  margin-left: 5%;
+  margin-right: -5px;
+  background-color: #fafafa;
+  border: 7px solid #258084;
+  text-align: center;
+}
+
+.box h2{
+}
+.box p{
+  margin: 0 5px;
+  text-align: left;
+}
+.box button{
+  margin: 10px auto;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+.box button:hover{
+  background-color: #eaeaea;
+}
+
+@media (max-width: 750px) {
+  .box{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
 }
