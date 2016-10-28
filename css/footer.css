@@ -4,5 +4,8 @@
   text-align: center;
   width: 100%;
   font-size: 1.2em;
-  margin-top: -24px;
+  padding: 10px;
+}
+
+#footer h2{
 }

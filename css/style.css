@@ -1,14 +1,28 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: #289472;
+}
+
+#content-section{
   background-color: #fafafa;
 }
 
-.box-container{
+#content-section > *{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#box-section{
   background-color: #e6a12b;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   padding: 20px 0;
+  margin-top: -16px;
+}
+#box-container{
+  margin: 0 auto;
+  max-width: 1000px;
 }
 .box{
   display: inline-block;
