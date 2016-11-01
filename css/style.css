@@ -1,7 +1,9 @@
+/* White #FAFAFA, Blue #2A8084, Yellow #E5A02E */
+
 body{
   margin: 0;
   padding: 0;
-  background-color: #289472;
+  background-color: #FAFAFA;
 }
 
 #content-section{
@@ -13,8 +15,12 @@ body{
   margin: 0 auto;
 }
 
+#content-container {
+  background-color: red;
+}
+
 #box-section{
-  background-color: #e6a12b;
+  background-color: #E5A02E;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   padding: 20px 0;
