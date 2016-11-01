@@ -16,6 +16,10 @@
       <canvas id="canvas" width="500" height="300" onmousedown="mouse_down(event)" onmousemove="mouse_move(event)" onmouseup="mouse_up(event)"></canvas>
     </section>
 
+    <label>Thickness</label>
+    <input type="range" min="1" max="25" value="10" onchange="thickness(this)">
+    <div id="thickness"></div>
+
 
     <script src="js/pangen.js" charset="utf-8"></script>
   </body>
