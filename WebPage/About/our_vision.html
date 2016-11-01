@@ -2,8 +2,173 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>OUR_VISION</title>
+    <title>OUR_VISION.HTML</title>
+    <style>
+    /* Farger_ Orangsje: #E5A02E Blå: #2A8084 Beige: #E5D8B5 */
+
+    html {
+      background-color: #E5D8B5;
+    }
+
+      body {
+        margin:0;
+      }
+      header{
+        background-color: #2A8084;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin:0
+      }
+
+      footer{
+        background-color: #2A8084;
+        width: auto;
+        height: auto;
+        text-align: center;
+      }
+
+      p{
+        font-family: Helvetica;
+        padding: 3px;
+        margin:0;
+        border: 5px;
+        border-color: #E5A02E;
+        border-style: solid:
+      }
+
+      figure {
+        align-self: center;
+      }
+
+      figcaption{
+        font-size: 13px;
+        font-family: sans-serif;
+        background-color: #E5D8B5;
+        text-align: center;
+      }
+
+
+      section{ /* Skjerm seksjonen*/
+        background-color: #E5D8B5;
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+
+      h2.frame {
+        text-align: center;
+      }
+      .frame { /*Den Oransje boksen rundt*/
+        margin: auto;
+        height: auto;
+        width: 75%;
+        padding: 10px 15px 15px 15px;;
+        background-color: #E5A02E;
+      }
+
+      .textbox_artikkel{ /*Den faktiske artikkelen*/
+        height: auto;
+        background-color: #E5D8B5;
+        border: 5px;
+        border-style: solid;
+        border-color: #2A8084;
+
+      }
+
+      .bilde_artikkel{ /*Bildet inne i artikkelen*/
+        height: auto;
+        border: 5px;
+        border-color:  #2A8084;
+        border-style: solid;
+        margin:10px;
+      }
+
+      .piler {
+        border: auto;
+        margin: auto;
+        border-style: solid;
+        border-color:#2A8084;
+        position: relative;
+      }
+
+      .shell { /*Laget utenpå artikkelen, inne i seksjonen*/
+        width: inherit;
+
+      }
+      .separate { /* Det blå båndet mellom seksjonene*/
+      position: relative;
+      background-color: #2A8084;
+      height: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 75%;
+      margin: auto;
+
+      }
+
+      #pil_h{
+        float: right;
+        top: 200px;
+        right: auto;
+      }
+
+
+      #pil_v {
+        float: left;
+        top: 200px;
+      }
+
+
+      #turtle {
+        float:right;
+      }
+
+
+      #media{
+        text-align: center;
+      }
+    </style>
   </head>
+  <header>
+    <div> dis da header</div>
+  </header
   <body>
+
+    <!-- En standarisert artikkel:-->
+    <section> <!--Boksen rundt artikkelen-->
+      <div class="shell">
+      <article class="frame" alt="artikkel">
+        <h2>Our Vision is great than the mightiest of all! </h2> <!-- Contains the title of the article as well as the Date and time -->
+        <div class="textbox_artikkel">
+          <p>I like muffins when they are hot but when they get colder they seem to not remind me so much of home anymore, at those times i get lonely and wonder about what would have happened if i hat stayed at home instead of searching for greater destiny in the lad of the free</p>
+          <p>Sometimes i like to eat vegetables weven when they are not cooked, and so I am prone to eating rotten ones</p>
+
+          <figure class="bilde_artikkel" id="turtle">
+            <img src="tortl_1.gif" height="200px" id="turtle">
+            <figcaption>Fig.1 - In Stoviet Russia, turtle loves you!</figcaption>
+          </figure>
+
+          <p>I like turtles too, they seem to be the most patient out of all of the animals that inhabit this  earth, alltough that being said the turtles just might be slow..</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+
+      </article>
+      <div class="separate">  </div>
+    </div >
+
+    </section>
+
+    <section>
+      <article class="frame" id="media">
+        <p>These are links to other times</p>
+      </article>
+    </section>
+
   </body>
+  <footer>
+    <div>And dis da footer</div>
+  </footer>
 </html>
