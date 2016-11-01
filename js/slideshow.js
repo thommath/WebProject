@@ -1,4 +1,7 @@
-/* This javascript is based on this tutorial: http://www.w3schools.com/howto/howto_js_slideshow.asp */
+/*
+This javascript is based on this tutorial: http://www.w3schools.com/howto/howto_js_slideshow.asp
+WRTITTEN BY: Martin Bondkall Gjerde
+*/
 
 var slideIndex = 1;
 showSlides(slideIndex);
