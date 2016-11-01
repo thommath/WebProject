@@ -1,14 +1,14 @@
 header{
 /*  height: 50px;*/
-  background-color: #258084;
+  background-color: #2A8084;
   height: 130px;
   font-family: 'Press Start 2P', cursive;
-  color: #e6a12b;
+  color: #E5A02E;
   text-decoration: none;
   border-bottom: 2px solid black;
 }
 header a{
-  color: #e6a12b;
+  color: #E5A02E;
   text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ header a{
   position: relative;
 }
 .circle{
-  border: 7px solid #e6a12b;
+  border: 7px solid #E5A02E;
   border-radius: 100px;
   overflow: visible;
 }
