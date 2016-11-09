@@ -1,0 +1,29 @@
+/*
+WRITTEN BY: Martin Bondkall Gjerde
+PURPOSE: Style the videos.html
+*/
+
+
+#content-container{
+  background-color: #fafafa;
+}
+
+h1, p{
+text-align: center;
+font-family: "Lucida console", "Georgia", "Times New, Roman";
+}
+
+h1{
+  font-size: 30px;
+}
+
+video{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.video_box{
+  margin: 0 auto;
+  width: 600px;
+  border: 7px solid #258084;
+}
