@@ -1,5 +1,6 @@
 /*
 WRITTEN BY: Thomas Lund Mathisen
+DATE: 09.11.2016
 PURPOSE: Load basic elements to the webpage
 */
 
