@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/header.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/footer.css" media="screen" title="no title">
+
   </head>
   <body>
 
@@ -14,7 +15,7 @@
       <div id="header_container">
         <div>
           <div class="circle">
-            <img src="http://placehold.it/150x150" alt="Logo"/>
+            <img id ="logo_pic" src="media/img/img_img/logo.png" alt="Logo"/>
           </div>
           <div class="logo">
             PanBot
@@ -24,12 +25,25 @@
           <a href="#" class="navbox">
               Home
           </a>
-          <a href="#" class="navbox">
+          <a href="#" id = "media" class="navbox dropbtn" onmouseover="mopen('media_drop_down')"
+                                                          onmouseout="mclosetime()">
+              Media
+          </a>
+              <div id="media_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
+                                                                  onmouseout="mclosetime()">
+                <a href="#">Gallery</a>
+                <a href="#">Videos</a>
+              </div>
+          <a href="#" id="about" class="navbox dropbtn" onmouseover="mopen('about_drop_down')"
+                                                          onmouseout="mclosetime()">
               About
-          </a>
-          <a href="Media\gallery.html" class="navbox">
-              Gallery
-          </a>
+            </a>
+              <div id="about_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
+                                                                  onmouseout="mclosetime()">
+                <a href="#">About us</a>
+                <a href="#">About Panbot</a>
+                <a href="#">Our vision</a>
+              </div>
           <a href="#" class="navbox">
               Pangen
           </a>
@@ -79,6 +93,6 @@
         Contact on us tqitter or some tefd else
       </p>
     </section>
-
+    <script src="js/drop_down_meny.js" charset="utf-8"></script>
   </body>
 </html>
