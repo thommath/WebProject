@@ -4,7 +4,19 @@ DATE: 09.11.2016
 PURPOSE: Load basic elements to the webpage
 */
 
+let loadCounter = 0;
+
+function fileLoaded(){
+  loadCounter -= 1;
+  if(loadCounter == 0){
+    remove_loading_elements();
+    setup_done();
+  }
+}
+
 function loadDoc(container, module, first, input=[]) {
+  loadCounter += 1;
+
   var xhttp = new XMLHttpRequest();
 
   xhttp.onreadystatechange = function() {
@@ -19,6 +31,7 @@ function loadDoc(container, module, first, input=[]) {
       }else{
         container.innerHTML += text;
       }
+      fileLoaded();
     }
   };
   xhttp.open("GET", "/WebProject/WebPage/module/" + module + ".html", true);
@@ -29,14 +42,15 @@ function setup(){
   loadDoc(document.head, "head", true);
   loadDoc(document.body, "header", true);
   loadDoc(document.body, "footer", false);
-
-  setTimeout(function(){
-    let del = document.getElementsByClassName("delete");
-    console.log(del);
-    for(var i = 0; i < del.length; i++){
-      document.body.removeChild(del[i]);
-    }
-  }, 10);
 }
+
+function remove_loading_elements(){
+  let del = document.getElementsByClassName("delete");
+  for(var i = 0; i < del.length; i++){
+    document.body.removeChild(del[i]);
+  }
+}
+
+function setup_done(){}
 
 setup();

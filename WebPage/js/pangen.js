@@ -1,12 +1,12 @@
 coor_array = [];
 stroke_array = [];
-var ctx;
-var canvas;
+let ctx;
 
 function setup_pangen(){
-  canvas = document.getElementById('canvas');
-  ctx = canvas.getContext('2d');
+  ctx = document.getElementById('canvas').getContext('2d');
+  ctx.fillRect(0, 0, 100, 100);
   ctx.lineWidth=10;
+  console.log("Canvas setup done");
 }
 
 var down=false;
@@ -19,8 +19,7 @@ function thickness(elem){
 
 function mouse_down(evt){
   down = true;
-  console.log(canvas.parentElement.offsetTop);
-  stroke_array.push({x:evt.clientX-8-canvas.offsetLeft, y:evt.clientY-8-canvas.offsetTop, z:ctx.lineWidth});
+  stroke_array.push({x:evt.clientX-290, y:evt.clientY-200, z:ctx.lineWidth});
 }
 
 function mouse_up(evt){
@@ -36,12 +35,11 @@ function update_color(){
   color[1] += 0.6;
   color[2] += 0.6;
   ctx.strokeStyle = 'rgb(' + parseInt(color[0]) + ',' + parseInt(color[1]) + ',' + parseInt(color[2]) + ')';
-  // console.log('rgba(' + color[0] + ',' + color[1] + ',' + color[2] + ')');
 }
 
 function mouse_move(evt){
   if(down==true && Math.pow(stroke_array[stroke_array.length-1].x-evt.clientX+8, 2)+Math.pow(stroke_array[stroke_array.length-1].y-evt.clientY+8, 2)>1000/(ctx.lineWidth)){
-    stroke_array.push({x:evt.clientX-8, y:evt.clientY-8, z:ctx.lineWidth});
+    stroke_array.push({x:evt.clientX-290, y:evt.clientY-200, z:ctx.lineWidth});
     draw();
   }
 }

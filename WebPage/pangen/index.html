@@ -15,7 +15,7 @@
       }
     </style>
   </head>
-  <body onload="setup_pangen()">
+  <body>
 
     <section class="section" id="canvas-section">
       <div class="content">
@@ -32,8 +32,13 @@
       </div>
     </section>
 
-
     <script src="/WebProject/WebPage/js/modulize.js" charset="utf-8"></script>
     <script src="/WebProject/WebPage/js/pangen.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    //@Override
+    function setup_done(){
+      setup_pangen();
+    }
+    </script>
   </body>
 </html>

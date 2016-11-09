@@ -36,11 +36,11 @@ PURPOSE: A page that contains examples of how to use the features in the best wa
       loadDoc(container, "box", false, ["Digns", "Her er mye fin info"]);
       loadDoc(container, "box", false, ["Dumpeditt", "Wiho lorem ipseifmdsk fdsfj dsakd easd"]);
       loadDoc(container, "box", false, ["Wioioioioi", "Hola hola hola"]);
-      setTimeout(function(){
+
+      function setup_done(){
         console.log(container);
         document.getElementById("box-container").appendChild(container);
-
-      }, 100);
+      }
     </script>
 
   </body>

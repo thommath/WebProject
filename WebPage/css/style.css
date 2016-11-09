@@ -8,6 +8,8 @@ body{
 
 .section{
   border-top: 2px solid black;
+  padding-bottom: 1px;
+//  margin-bottom: -16px;
 }
 
 section:nth-child(odd){
@@ -25,7 +27,6 @@ section:nth-child(odd){
 }
 #box-section{
   padding: 20px 0;
-  margin-top: -16px;
 }
 
 
@@ -75,4 +76,8 @@ figcaption{
   font-family: sans-serif;
   background-color: #E5D8B5;
   text-align: center;
+}
+
+figure img{
+  max-width: 250px;
 }

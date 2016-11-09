@@ -2,7 +2,7 @@
   background-color: #2A8084;
   color: #E5A02E;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
   font-size: 1.2em;
   padding: 20px;
 }
