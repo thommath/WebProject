@@ -6,30 +6,29 @@ body{
   background-color: #FAFAFA;
 }
 
-#content-section{
-  background-color: #fafafa;
+.section{
+  border-top: 2px solid black;
 }
 
-#content-section > *{
-  max-width: 1000px;
+section:nth-child(odd){
+  background-color: #E5A02E;
+}
+
+.section > *{
+  max-width: 800px;
   margin: 0 auto;
 }
 
-#content-container {
-
+#content-section{
+  background-color: #fafafa;
+  padding-top: 60px;
 }
-
 #box-section{
-  background-color: #E5A02E;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
   padding: 20px 0;
   margin-top: -16px;
 }
-#box-container{
-  margin: 0 auto;
-  max-width: 1000px;
-}
+
+
 .box{
   display: inline-block;
   max-width: 300px;

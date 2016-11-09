@@ -1,9 +1,10 @@
 coor_array = [];
 stroke_array = [];
 var ctx;
+var canvas;
 
-function setup(){
-  var canvas = document.getElementById('canvas');
+function setup_pangen(){
+  canvas = document.getElementById('canvas');
   ctx = canvas.getContext('2d');
   ctx.lineWidth=10;
 }
@@ -18,7 +19,8 @@ function thickness(elem){
 
 function mouse_down(evt){
   down = true;
-  stroke_array.push({x:evt.clientX-8, y:evt.clientY-8, z:ctx.lineWidth});
+  console.log(canvas.parentElement.offsetTop);
+  stroke_array.push({x:evt.clientX-8-canvas.offsetLeft, y:evt.clientY-8-canvas.offsetTop, z:ctx.lineWidth});
 }
 
 function mouse_up(evt){
