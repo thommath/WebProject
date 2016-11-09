@@ -25,5 +25,7 @@ video{
 .video_box{
   margin: 0 auto;
   width: 600px;
+}
+.video_box video{
   border: 7px solid #258084;
 }
