@@ -28,10 +28,6 @@ h1{
   margin-right: auto;
 }
 
-.row > .column {
-  padding: 0 8px;
-}
-
 .row:after {
   content: "";
   display: table;
@@ -41,6 +37,7 @@ h1{
 .column {
   float: left;
   width: 25%;
+
 }
 
 .modal {
