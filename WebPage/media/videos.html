@@ -76,6 +76,17 @@ PURPOSE: View videos of PanBot
         Contact on us tqitter or some tefd else
       </p>
     </section>
+    <script src="js/modulize.js" charset="utf-8"></script>
+    <script type="text/javascript">
 
+      var container = document.createElement("section");
+      loadDoc(container, "video_box", false, ["Digns", "videos/example1.mp4"]);
+      loadDoc(container, "video_box", false, ["kujyfdfv", "videos/example1.mp4"]);
+      setTimeout(function(){
+        console.log(container);
+        document.getElementById("box-container").appendChild(container);
+
+      }, 100);
+    </script>
   </body>
 </html>
