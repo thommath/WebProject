@@ -1,0 +1,113 @@
+/*
+A lot of this css is based on this tutorial: http://www.w3schools.com/howto/howto_js_lightbox.asp
+WRITTEN BY: Martin Bondkall Gjerde
+PURPOSE: Style the image slideshow
+*/
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#content-section{
+  background-color: #E5A02E;
+}
+
+#content-container{
+  background-color: #E5A02E;
+  width: 800px;
+}
+
+h1{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.modal {
+  position: relative;
+  width: 100%%;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 5px;
+}
+
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #808080;
+}
+
+.numbertext {
+  color: white;
+  font-size: 16px;
+  padding: 8px 8px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.demo {
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+Code in this html document is based on this tutorial: http://www.w3schools.com/howto/howto_js_lightbox.asp
+WRITTEN BY: Martin Bondkall Gjerde
+PURPOSE: Show and view images
+-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Images</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="../css/header.css" media="screen" title="no title">
+    <link rel="stylesheet" href="../css/footer.css" media="screen" title="no title">
+    <link rel="stylesheet" type="text/css" href="../css/media_css/img_style.css">
+  </head>
+  <body>
+
+    <header>
+      <div id="header_container">
+        <div>
+          <div class="circle">
+            <img src="http://placehold.it/150x150" alt="Logo"/>
+          </div>
+          <div class="logo">
+            PanBot
+          </div>
+        </div>
+        <nav>
+          <a href="#" class="navbox">
+              Home
+          </a>
+          <a href="#" class="navbox">
+              About
+          </a>
+          <a href="#" class="navbox">
+              Media
+          </a>
+          <a href="#" class="navbox">
+              Pangen
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="content-section">
+      <div id="content-container">
+        <br><br><br><br>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/img_img/example1.jpg">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/img_img/example2.jpg">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/img_img/example3.jpg">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/img_img/example4.jpg">
+            </div>
+
+            <!-- Bruker piler som knapper som er hentet med unicoden under -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+            <div class="column">
+              <img class="demo cursor" src="img/img_img/example1.jpg" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/img_img/example2.jpg" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/img_img/example3.jpg" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/img_img/example4.jpg" onclick="currentSlide(4)" alt="">
+            </div>
+          </div>
+        </div>
+
+
+        <script src="../js/slideshow.js"></script>
+      </div>
+    </section>
+
+
+
+    <section id="footer">
+      <h2>Contact</h2>
+      <p>
+        Contact on us tqitter or some tefd else
+      </p>
+    </section>
+
+  </body>
+</html>

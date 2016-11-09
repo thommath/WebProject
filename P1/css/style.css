@@ -1,0 +1,139 @@
+body, html{
+  height: 100%;
+}
+
+body{
+  background-color: #fafafa;
+  color: #111;
+  font-family: Calibri, Verdana, sans-serif;
+}
+
+ol, ul {
+  line-height: 1.5em;
+}
+
+/* Link Section */
+a{
+  color: blue;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a:visited {
+  color:blue;
+}
+a:hover{
+  color:green;
+}
+/* Headers and Articles*/
+article{
+  margin: 5em 0;
+}
+
+h1{
+  font: 2.5em 'Syncopate', Verdana, sans-serif;
+  text-align: center;
+}
+
+h2{
+  font: 2em 'Libre Franklin', Verdana, sans-serif;
+  text-align: center;
+  padding: 0.8em 0 0 0.2em;
+}
+
+h4{
+  font-style: normal;
+  text-align: center;
+  font-weight: normal;
+  color: #666;
+}
+
+header{
+  width: 100%;
+  margin: 55% auto 10% auto;
+  position: absolute;
+  bottom: 200px;
+}
+
+header h1{
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+header h4{
+  margin-top: 5px;
+}
+
+header hr{
+  margin: 2em;
+}
+
+header p{
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/*ID's and Classes*/
+
+#arrow{
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+#arrow-link:hover, #arrow-link:visited, #arrow-link{
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+#arrow-down{
+  color: #aaa;
+  font-size: 5em;
+  text-align: center;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+#frontpage{
+  height: 100% !important;
+  position: relative;
+  margin: auto;
+}
+
+@media screen and (max-height: 480px) {
+    header {
+        position: relative;
+        margin: auto;
+        bottom: 0px;
+    }
+    #arrow{
+      display: none;
+    }
+}
+
+
+#table-of-content ol li{
+  margin: 0.5em 0;
+}
+
+#special-prefrences h5{
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0.2em;
+}
+
+#content{
+  height: 100%;
+  max-width: 700px;
+  margin: 50px auto;
+  font-size: 1.2em;
+}
+
+#navn{
+  font-size: 11px;
+}

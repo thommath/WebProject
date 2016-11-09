@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Project Requirements</title>
@@ -8,45 +8,47 @@
   </head>
   <body>
     <section id="content">
-      <header>
-        <h1>The Pancake Project</h1>
-        <h4>The Amazing Pancake Printing Robot</h4>
-        <hr>
-        <p>
-          "We believe in the future! We will make the world <br>
-          a better place with our superb pancakes"
-        </p>
-      </header>
+      <section id="frontpage">
+        <header>
+          <h1>The Pancake Project</h1>
+          <h4>The Amazing Pancake Printing Robot</h4>
+          <hr>
+          <p>
+            "We believe in the future! We will make the world <br>
+            a better place with our superb pancakes"
+          </p>
+        </header>
 
-      <div id="arrow">
-        <a href="#table-of-content" id="arrow-link">
-          <div id="arrow-down">
-            &darr;
-          </div>
-        </a>
-      </div>
-
-      <p>
-        Anniken Sandøy, Maria Ivashentseva, Martin Bondkall Gjerde, Martin Stenmann Westergaard, Thomas Lund Mathisen
-      </p>
+        <div id="arrow">
+          <a href="#table-of-content" id="arrow-link">
+            <div id="arrow-down">
+              &darr;
+            </div>
+          </a>
+        </div>
+      </section>
 
       <section id="table-of-content">
-      <h2>Table of Contents</h2>
+        <h3>Table of Contents</h3>
         <ol>
           <li><a href="#client">Our Client</a></li>
           <li><a href="#goals">Our Purpose and Goals</a></li>
           <li><a href="#audience">Our Audience</a></li>
           <li><a href="#website">Our Website Layout</a></li>
           <li><a href="#special-prefrences">Special Prefrences</a></li>
-          <li><a href="#maintenance">Maintenance</a></li>
+          <!--<li><a href="#maintenance">Maintenance</a></li>-->
           <li><a href="#communication">Communication</a></li>
         </ol>
+
+        <p id="navn">
+          Anniken Sandøy, Martin Bondkall Gjerde, Maria Ivashentseva, Martin Stenmann Westergaard, Thomas Lund Mathisen <br>  ~ 22.september 2016
+        </p>
 
       </section>
 
 
-      <article>
-        <h3 id="client">Our Client</h3>
+      <article id="client">
+        <h3>Our Client</h3>
         <ul>
           <li>Client name: PanBot</li>
           <li>Contact person: Maria Ivashentseva</li>
@@ -57,31 +59,27 @@
         </p>
       </article>
 
-      <article>
-        <h3 id="goals">Purpose and goals</h3>
-        <p>
-          The site’s purpose and goals and how they will be accomplished by the site. Try to draw a connection between the goals and the specific content elements of the site.
-        </p>
+      <article id="goals">
+        <h3>Purpose and goals</h3>
         <ul>
-          <li>We want to share our passion for 2d-printed pancakes </li>
-          <li>The purpose of the site is to document our journey to creating  a fully fledged pancake printer and also create publicity for our project.</li>
-          <li>?? Available for the whole year or stop in November</li>
-          <li>To spread the idea, to get sponsors and donations to make new versions, to motivate tired students during the exam period</li>
+            <li>We want to share our passion for 2d-printed pancakes. </li>
+            <li>The purpose of the site is to document our journey to creating  a fully fledged pancake printer and also create publicity for our project.</li>
+            <li>To spread the idea, to get sponsors and donations to make new versions, to motivate tired students during the exam period</li>
         </ul>
       </article>
 
-      <article>
-        <h3 id="audience">Target Group</h3>
+      <article id="audience">
+        <h3 >Target Group</h3>
         <p>
-          Who is the intended audience or typical user? Describe them and their need for information and other content.<br>
           <br>
-          The users of the site will be people that have an interest in printed foods; the physical tools utilized as to make printed foods reality, as well as the programming aspect of the project. By documenting the whole process we can give clear guidance as to how you can set up your own DIY pancake printer, thereby spreading our passion for pancakes.<br>
+          The users of the site will be people that have an interest in printed foods; the physical tools utilized as to make printed foods reality, as well as the programming aspect of the project.
+          By documenting the whole process as it progresses through it's developmental-stages, we can give clear guidance as to how you can set up your own DIY pancake printer, thereby spreading our passion for pancakes and inspiring other technology-enthusiasts who have an interest in 3-d printing to start out with their own projects; taking the project further.<br>
           Other users might just want some designer-pancakes, and we believe we can accommodate their requests too.
         </p>
       </article>
 
-      <article>
-        <h3 id="website">Content of the Website and Organisation</h3>
+      <article id="website">
+        <h3 >Content of the Website and Organisation</h3>
         <ol>
           <li>
               "Home"
@@ -91,16 +89,16 @@
             <!--Gallery-->
             <ul>
               <li>
-                  "Gallery"
-                <p>
-                  List of images
-                </p>
+                  "Gallery"<br>
+                <span>
+                  -List of images
+                </span>
               </li>
               <li>
-                Videos"
-                <p>
-                  List of vlogs and other promotion videos
-                </p>
+                "Videos"<br>
+                <span>
+                  -List of vlogs and other promotion videos
+                </span>
               </li>
             </ul>
           </li>
@@ -129,6 +127,8 @@
       <article id="special-prefrences">
         <article>
           <h3>Functional Requirements</h3>
+          <p>We want the user to be able to easily access all of the different content on the site, be it images, blog posts or videos. Later down the line we also want to enable the user to interact with the site, like making their own pancake designs and downloading them. This content is however optional. </p>
+          <br>
           <h5>Mandatory:</h5>
           <ol>
             <li>The user must be able to access the newest public blog, vlog or image posts (2-4) from the front page</li>
@@ -147,6 +147,7 @@
 
         <article>
           <h3>Technical Requirements</h3>
+          <span> The site must be built using only HTML5, CSS and JavaScript, as these are part of the assignment parameters. It also has to be supported on multiple browsers.</span><br>
           <h5>Mandatory:</h5>
           <ol>
             <li>Built using only js, css and HTML5 (no libraries, frameworks or external css)</li>
@@ -161,7 +162,7 @@
           </ol>
         </article>
 
-        <article>
+        <!--<article>
           <h3>Drawing Application</h3>
           <h5>Mandatory:</h5>
           <ol>
@@ -178,15 +179,15 @@
             <li>Share on social media</li>
             <li>Render image of the estimated pancake</li>
           </ol>
-        </article>
+        </article>-->
       </article>
 
-      <article id="maintenance">
+      <!--<article id="maintenance">
         <h3>Maintenance</h3>
         <p>
           If known, the server where the site will reside after the project and the names of who will be responsible for the site maintenance.
         </p>
-      </article>
+      </article> -->
 
       <article id="communication">
         <h3>Communication</h3>

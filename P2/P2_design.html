@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>P2_Design</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <script src="js/movingArrow.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <section id="content">
+    <section id="frontpage">
+      <header>
+        <h1>The Pancake Project</h1>
+        <h4>The Amazing Pancake Printing Robot</h4>
+        <hr>
+        <p>
+          "We believe in the future! We will make the world <br>
+          a better place with our superb pancakes"
+        </p>
+      </header>
+
+      <div id="arrow">
+        <a href="#table-of-content" id="arrow-link">
+          <div id="arrow-down">
+            &darr;
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="table-of-content">
+      <h3>Table of Contents</h3>
+      <ol>
+        <li><a href="#client">Our Client</a></li>
+        <li><a href="#goals">Our Purpose and Goals</a></li>
+        <li><a href="#structure">Navigation Structure </a></li>
+        <li><a href="#design">Page Design and Apperance</a></li>
+        <li><a href="#contnent">Content</a></li>
+        <li><a href="#js">Minimum Requirements</a></li>
+        <li><a href="#plan">Plan</a></li>
+      </ol>
+
+      <p id="navn">
+        Anniken Sandøy, Martin Bondkall Gjerde, Maria Ivashentseva, Martin Stenmann Westergaard, Thomas Lund Mathisen <br>  ~ 9.october 2016
+      </p>
+    </section>
+
+
+    <article id="client">
+      <h3>1. Our Client</h3>
+
+      <ul>
+        <li>Client name: PanBot</li>
+        <li>Contact person: Maria Ivashentseva</li>
+      </ul>
+      <p>
+        Our client for this project is a student project that revolves around making a pancake printing robot, PanBot for short. The project is led by two students, Maria Ivashentseva and Thomas Lund Mathisen.
+      </p>
+    </article>
+
+    <article id="structure">
+      <h3>2. Navigational Structure</h3>
+
+      <img id="map" src="mockups/NavStructure.png" alt="Sitemap">
+      <p>Our navigational structure is intra-linked, allowing you to reach any part of the site from any of the pages.</p>
+    </article>
+
+    <article id="goals">
+      <h3>3. Purpose and goals</h3>
+
+      <ul>
+          <li>We want to share our passion for 2d-printed pancakes. </li>
+          <li>The purpose of the site is to document our journey to creating  a fully fledged pancake printer and also create publicity for our project.</li>
+          <li>To spread the idea, to get sponsors and donations to make new versions, to motivate tired students during the exam period</li>
+      </ul>
+    </article>
+
+    <article id="design">
+      <h3>4. Page Design and Layout</h3>
+
+        <h4>Colors</h4>
+        <img class="mockups" src="mockups/farger.jpg" width="10px" height="10px" alt="farger">
+          <p>Our colorscheme will be based around warm and friendly colors, reminicent of panckakes/waffles</p>
+        <h4>Fonts</h4>
+          <p>Our site will have a main font, as well as several backup fonts, to ensure that the user can view something else than the default font on the webiste</p>
+        <h4>Link styles</h4>
+          <p>Our links will have an underline style, to declare that the element is a link to the user</p>
+        <h4>Logo</h4>
+          <img id="logo" src="mockups/logo.jpg" width="600" alt="logo">
+          <p>Our logo is made by a fellow grapical design student, and portrays a small cute robot, framed in, and sitting on top of a pile of pancakes<p>
+        <h4>Header</h4>
+          <p>The magical new and pretty header is quite standard actually. It is quite low, like the modern sites and goes all the way to the edge of the browser. The content is limited by a max-width and centered (in the horizontal direction) on screen, just like the content. To the left, like everyone else, we have our logo with a link to the home page. To the right we have a navigation bar with our four main categories. The bar is aligned to the bottom right of the header with some margin in all directions.</p>
+        <h4>Navbar</h4>
+          <p> The navigation bar consists of the four elements where two are dropdown menus. When the mouse hovers over the box element a child-element will appear that is the menu. The user can then click on the desired link and move on. This however is very little user friendly for those who use phone, but who uses phone anyway? After a long and hard discussion with the client we ended up with a mobile design with a button to get down the menu and submenus</p>
+        <h4>Scaling</h4>
+          <p>Our site will change it's module design according to the width of the device-screen of the user. Incorporating this will mean making a different design philosophy on the smaller devices</p>
+    </article>
+
+    <article id="pages">
+      <h3>5. Pages</h3>
+
+      <h4>Homepage</h4>
+        <img class="mockups" src="mockups/PanBot_1.jpg" width="200" alt="homepage">
+        <p>The purpose of the home page is to inspire and show how awesome our website is. Under the header it will have a huge “jumbotron”, box, designed like a slideshow with the name “PanBot” in front and some advertising text as a subtitle. It will also have a arrow-button down to scroll to more information about the different other pages on the site.</p>
+        <p>Below the jumbotron we will have one section with three boxes side by side and probably a bit distinguished background color. These boxes will align differently when the screen is small. Each box will contain a header and a few sentences below with inviting text and a click here button. Each box will have the same dimensions and probably be 200-250px x 150-300px. (height x width)
+         After this section comes the footer which is described elsewhere. </p>
+
+
+      <h4>Media Page(Index)</h4>
+      <img class="mockups" src="mockups/PanBot_2.jpg" width="200" alt="blog">
+        <p>When you open the media page you will be astonished by what innovative design we have! The page is built as a blog so it can contain a lot of stories, videos or images. Our twist is that we display the different stories like a slideshow. An arrow to the right and one arrow to the left and a page number in the bottom middle so the user don’t get lost.</p>
+        <p>A blog page contains a header and maybe some pictures, videos or other content, it’s all up to the client.
+         Under the slideshow-blog we have a section like the home-page that contains two boxes, one for pictures and one for videos that links to Picture Gallery and Video Gallery.
+         Ends with  the footer and starts with the header.</p>
+      <h4>Blog</h4>
+         <p>The blog page will contain a log of entries/updates from the project group, documenting their steady process towards their finished product. There will also be pictures as well as videos captured during the development to further elaborate. The purpose of this blog page is to reveal the whole process as the group progresses through each of the development stages, so that others who have an interest in 3-d printing or pancakes can read and learn how to do it themselves; true DIY style.</p>
+
+      <img class="mockups" src="mockups/PanBot_3.jpg" width="200" alt="media">
+      <h4>Picture Gallery</h4>
+        <p>The gallery will have the standard header that accompanies the page, and just beneath it there’ll be a picture viewer that displays the first picture in the gallery. There will be buttons on either side that allows the user to navigate to the next picture in the line. Under the large picture there’ll be a stripe of several picture thumbnails in a line that’ll allow the user to easily navigate between multiple pictures faster.</p>
+         <p>There’ll be arrows on either side of the pictures that will allow the user to scroll further backwards or forwards in the galley. The pictures will first and foremost be sorted after the date the pancakes were made. </p>
+      <h4>Video Gallery</h4>
+        <p>This will have a very similar setup as the picture gallery, with the main difference being the fact that there are videos instead of pictures. </p>
+
+      <h4>About us</h4>
+      <img class="mockups" src="mockups/PanBot_5.png" width="200" alt="about">
+         <p>The about pages will be boring, their purpose and goal is to be as boring as possible. They should maximize the boredom so all the other pages looks amazing! We will of course try to spice them up a bit with an image aligned to the right, a huge nice title (the same as the about pages) and some extremely pretty and boring text (also the same as everywhere else).
+         They might have some links and other pages or sites for a read more section if the client gets famous.
+         Guess what kind of footer and header we will have? Well guessed! Exactly the same! </p>
+      <h4>About PanBot</h4>
+         <p>Yet another boring page about our purpose and stretchgoals, all cerfuffeled together</p>
+
+      <h4>Pangen</h4>
+      <img class="mockups" src="mockups/PanBot_4.png" width="200" alt="pangen">
+         <p>The pangen page will have the same header and footer as everything else and the content will be one huge centered canvas with the js application</p>
+        </article>
+
+    <article id="js">
+      <h3>6. Javascript funtions</h3>
+
+        <h4>Dropdown menu</h4>
+         <p>Some elements in our menu will have the dropdown option. That means when the user hovers the mouse over the button we will display a child list of options placed bellow the original button. </p>
+        <h4>Carousel</h4>
+         <p>The carousel function will work like a slideshow. The function will load three images placed beside each other with a viewport only displaying one of them. It has options for arrows on the sides for changing images or/and automatically changing the images. When the image changes all of the images moves at the same speed in the same direction. When they have moved one image-length the image furthest away will be deleted and there will appear a new image on the other side. It will also support optional linkes when the images are clicked.</p>
+        <h4>Canvas</h4>
+            <p>On the pangen site we will have a drawing application we call Canvas. The canvas will display some buttons and a drawing area. The user should be able to draw lines and circles that are saved as a lot of lines after each other in a stack. When the user is done he/she should have to option to send it as an array in a post-request to another site which handles the request or save it as an local file. It will be on the format of four numbers space-seperated for each line on each line. </p>
+        <h4>Dynamic Time box</h4>
+            <p>A small element that changes depending on the time of day, but that always advocates pancakes for the following meal. Feks. on 11:45 the next meal will be lunch at 12:00 so the element might say "Soon time for lunch and do you know what is the perfect lunch? Pancakes!"</p>
+        <h4>Magnifying pictures</h4>
+            <p>Some images might be displayed as a bit small so when the user clicks at it, the image or video will appear as an overlay at either original size or as big as possible for the current dimentions of the screen. </p>
+       </article>
+
+    <section id="plan">
+      <h3>7. Plan</h3>
+
+        <ul>
+          <li>index.html</li>
+          <li>media/</li>
+          <ul>
+            <li>blog.html</li>
+            <li>images.html</li>
+            <li>videos.html</li>
+          </ul>
+          <li>about/</li>
+          <ul>
+            <li>about_us.html</li>
+            <li>about_panbot.html</li>
+            <li>our_vision.html</li>
+          </ul>
+          <li>pangen/</li>
+          <ul>
+            <li>pangen.html</li>
+          </ul>
+          <li>images/</li>
+          <ul>
+            <li>image_1</li>
+            <li>image_2</li>
+            <li>...</li>
+            <li>image_n</li>
+          </ul>
+          <li>videos/</li>
+          <ul>
+            <li>video_1.mp4</li>
+            <li>video_1.ogv</li>
+            <li>video_1.webm</li>
+            <li>video_2.mp4</li>
+            <li>video_2.ogv</li>
+            <li>video_2.webm</li>
+          </ul>
+          <li>buttons/</li>
+          <ul>
+            <li>right.gif</li>
+            <li>left.gif</li>
+          </ul>
+          <li>modularity/</li>
+          <ul>
+            <li>header.html</li>
+            <li>footer.html</li>
+            <li>box_elements.html</li>
+            <li>showreel.html</li>
+          </ul>
+          <li>scripts/</li>
+            <ul>
+              <li>drop_down_menu.js</li>
+              <li>jumbotron.js</li>
+              <li>gallery_transition.js</li>
+              <li>canvas.js</li>
+              <li>magnifying_pictures.js</li>
+              <li>dynamic_window.js</li>
+            </ul>
+            <li>css/</li>
+              <ul>
+                <li>style.css</li>
+              </ul>
+            </ul>
+            <br>
+      </section>
+
+      <section id="table">
+      <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg .tg-yw4l{vertical-align:top}
+      </style>
+
+      <h4> Development plan and Deadlines</h4>
+      <p>The main goal of the plan is to make the HTML elements of the website first, so that they are up and running before we implement the Javascript functions that ties it all together.</p>
+      <table class="tg">
+        <tr>
+          <th class="tg-yw4l">Task</th>
+          <th class="tg-yw4l">Description</th>
+          <th class="tg-yw4l">In charge</th>
+          <th class="tg-yw4l">Deadline</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">style.css</td>
+          <td class="tg-yw4l">Standard template design that will be used on all the webpages</td>
+          <td class="tg-yw4l">Anniken</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">index.html</td>
+          <td class="tg-yw4l">The main media page, featuring link to the galleries and the blog</td>
+          <td class="tg-yw4l">Martin W</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">blog.html</td>
+          <td class="tg-yw4l">Page for the log entries of the development team</td>
+          <td class="tg-yw4l">Martin W</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">images.html</td>
+          <td class="tg-yw4l">Image gallery</td>
+          <td class="tg-yw4l">Martin G</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">video.html</td>
+          <td class="tg-yw4l">Video gallery</td>
+          <td class="tg-yw4l">Martin G</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">about_us.html</td>
+          <td class="tg-yw4l">Page for indtroducing the main actors that initiated the project</td>
+          <td class="tg-yw4l">Martin W</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">abount_panbot.html</td>
+          <td class="tg-yw4l">Page about the project</td>
+          <td class="tg-yw4l">Masha </td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">Our_vision.html</td>
+          <td class="tg-yw4l">Page about the future goals and plan for the project</td>
+          <td class="tg-yw4l">Masha</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">drop_down_menu.js</td>
+          <td class="tg-yw4l">Drop down menues for the header</td>
+          <td class="tg-yw4l">Masha</td>
+          <td class="tg-yw4l">30.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">image_transition.js</td>
+          <td class="tg-yw4l">Slideshow function for the media partitions of the website</td>
+          <td class="tg-yw4l">Thomas</td>
+          <td class="tg-yw4l">30.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">canvas.js</td>
+          <td class="tg-yw4l">The function for the drawing application of PanGen</td>
+          <td class="tg-yw4l">Thomas</td>
+          <td class="tg-yw4l">30.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">magnify_image.js</td>
+          <td class="tg-yw4l">A function for the overlay that will appear once pictures/videos are clicked</td>
+          <td class="tg-yw4l">Martin G</td>
+          <td class="tg-yw4l">30.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">header.html</td>
+          <td class="tg-yw4l">The main header that will stay the same across all pages</td>
+          <td class="tg-yw4l">Thomas</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">box.html</td>
+          <td class="tg-yw4l">Modulated box elements that will be used across the website</td>
+          <td class="tg-yw4l">Thomas</td>
+          <td class="tg-yw4l">23.10</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">dynamic_window.js</td>
+          <td class="tg-yw4l">Function imbeded in header that advices people what to eat at differing times of the day</td>
+          <td class="tg-yw4l">Thomas</td>
+          <td class="tg-yw4l">30.10</td>
+        </tr>
+      </table>
+    </section>
+  </section>
+
+</body>
+</html>
