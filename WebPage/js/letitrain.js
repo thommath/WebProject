@@ -4,13 +4,13 @@ PURPOSE: A fun little easteregg
 StartDate: 1. November 2016
 */
 
-var height = 0
-rainingPancakes = []
+var height = 0;
+rainingPancakes = [];
 var running = 0;
 
 /* This is the main function that calls the other ones. */
 function setup_letItRain(){
-  document.getElementById('logo_text').onclick = function(){
+  document.getElementById('letitrain').onclick = function(){
     if(running == 0){
       var body = document.body,
           html= document.documentElement;
@@ -35,8 +35,8 @@ function PancakeDrop(){
     pancake.rotation = 0;
     pancake.speed = 4+Math.random()*2;
     pancake.rotSpeed = Math.random()*10-5;
-    pancake.top = -50;
-    pancake.style.top = "1px";
+    pancake.top = -250;
+    pancake.style.top = pancake.top + "px";
     document.body.appendChild(pancake);
     rainingPancakes.push(pancake);
     setTimeout(PancakeDrop, Math.random()*1000);
