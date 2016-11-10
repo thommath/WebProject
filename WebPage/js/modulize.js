@@ -11,6 +11,7 @@ function fileLoaded(){
   if(loadCounter == 0){
     remove_loading_elements();
     setup_done();
+    setup_letItRain();
   }
 }
 
