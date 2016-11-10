@@ -35,7 +35,7 @@ function loadDoc(container, module, first, input=[]) {
       fileLoaded();
     }
   };
-  xhttp.open("GET", "/WebProject/WebPage/module/" + module + ".html", true);
+  xhttp.open("GET", "/martiwes/WebPage/module/" + module + ".html", true);
   xhttp.send();
 }
 
