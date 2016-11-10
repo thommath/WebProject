@@ -1,5 +1,5 @@
 <!--
-WRITTEN BY: Thomas Lund Mathisen
+WRITTEN BY: Maria Ivashentseva
 DATE: 09.11.2016
 PURPOSE: To make all the headers equal
 -->
@@ -7,39 +7,38 @@ PURPOSE: To make all the headers equal
   <div id="header_container">
     <div>
       <div class="circle">
-        <img src="http://placehold.it/150x150" alt="Logo"/>
+        <img id ="logo_pic" src="media/img/img_img/logo.png" alt="Logo"/>
       </div>
       <div class="logo">
         PanBot
       </div>
     </div>
     <nav>
-      <a href="/WebProject/WebPage/" class="navbox">
-          Home
+      <a href="#" class="navbox">
+        Home
       </a>
-      <a href="#" id = "media" class="navbox dropbtn" onclick="drop_down()">
-
-      <a href="/WebProject/WebPage/About/about_panbot.html" class="navbox">
+      <a href="#" id = "media" class="navbox dropbtn" onmouseover="mopen('media_drop_down')"
+                                                      onmouseout="mclosetime()">
+      Media
+      </a>
+      <div id="media_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
+          onmouseout="mclosetime()">
+          <a href="#">Gallery</a>
+          <a href="#">Videos</a>
+        </div>
+          <a href="#" id="about" class="navbox dropbtn" onmouseover="mopen('about_drop_down')"
+                                                        onmouseout="mclosetime()">
           About
-      </a>
-      <a href="/WebProject/WebPage/media/blog.html" class="navbox">
-          Media
-          <div id="media_drop_down" class="dropdown_content">
-            <a href="#">Gallery</a>
-            <a href="#">Videoes</a>
-          </div>
-      </a>
-      <a href="Media\gallery.html" id="about" class="navbox dropbtn" onlick="drop_down">
-          About
-          <div id="about_drop_down" class="dropdown_content">
-            <a href="#">About us</a>
-            <a href="#">About Panbot</a>
-            <a href="#">Our vision</a>
-          </div>
-      </a>
-      <a href="/WebProject/WebPage/PanGen/pangen.html" class="navbox">
-          Pangen
+        </a>
+        <div id="about_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
+        onmouseout="mclosetime()">
+        <a href="#">About us</a>
+        <a href="#">About Panbot</a>
+        <a href="#">Our vision</a>
+      </div>
+      <a href="#" class="navbox">
+        Pangen
       </a>
     </nav>
-  </div>
+    </div>
 </header>

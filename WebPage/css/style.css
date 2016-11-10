@@ -6,30 +6,30 @@ body{
   background-color: #FAFAFA;
 }
 
+.section{
+  border-top: 2px solid black;
+  padding-bottom: 1px;
+//  margin-bottom: -16px;
+}
+
+section:nth-child(odd){
+  background-color: #E5A02E;
+}
+
+.section > *{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 #content-section{
   background-color: #fafafa;
+  padding-top: 60px;
 }
-
-#content-section > *{
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-#content-container {
-
-}
-
 #box-section{
-  background-color: #E5A02E;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
   padding: 20px 0;
-  margin-top: -16px;
 }
-#box-container{
-  margin: 0 auto;
-  max-width: 1000px;
-}
+
+
 .box{
   display: inline-block;
   max-width: 300px;
@@ -76,4 +76,8 @@ figcaption{
   font-family: sans-serif;
   background-color: #E5D8B5;
   text-align: center;
+}
+
+figure img{
+  max-width: 250px;
 }
