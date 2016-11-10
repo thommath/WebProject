@@ -18,8 +18,9 @@ PURPOSE: Style the image slideshow
 }
 
 .modal {
+  margin: auto;
   position: relative;
-  width: 100%%;
+  width: 60%;
   overflow: hidden;
   border-style: solid;
   border-width: 5px;
@@ -31,7 +32,8 @@ PURPOSE: Style the image slideshow
   margin: auto;
   padding: 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
+
 }
 
 .cursor {
@@ -75,6 +77,10 @@ PURPOSE: Style the image slideshow
 img {
   width: 100%;
   margin-bottom: -4px;
+}
+
+#logo_pic{
+  width:120px;
 }
 
 .demo {
