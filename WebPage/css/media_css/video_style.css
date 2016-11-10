@@ -1,0 +1,18 @@
+/*
+WRITTEN BY: Martin Bondkall Gjerde
+PURPOSE: Style the videos.html
+*/
+
+
+video{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.video_box{
+  margin: 0 auto;
+  width: 600px;
+}
+.video_box video{
+  border: 7px solid #258084;
+}

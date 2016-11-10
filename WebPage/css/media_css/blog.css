@@ -1,0 +1,81 @@
+/* Farger_ Orangsje: #E5A02E Blå: #2A8084 Beige: #E5D8B5 */
+
+
+  .frame { /*Den Oransje boksen rundt*/
+    margin: auto;
+    height: auto;
+    width: 75%;
+    padding: 10px 15px 15px 15px;;
+    background-color: #E5A02E;
+  }
+
+  .textbox_artikkel{ /*Den faktiske artikkelen*/
+    height: 350px;
+    overflow: auto;
+    background-color: #E5D8B5;
+    border: 5px;
+    border-style: solid;
+    border-color: #2A8084;
+
+  }
+
+  .bilde_artikkel{ /*Bildet inne i artikkelen*/
+    height: auto;
+    border: 5px;
+    border-color:  #2A8084;
+    border-style: solid;
+    margin:10px;
+  }
+
+  .piler {
+    border: auto;
+    margin: auto;
+    border-style: solid;
+    border-color:#2A8084;
+    position: relative;
+  }
+
+  .shell { /*Laget utenpå artikkelen, inne i seksjonen*/
+    width: inherit;
+
+  }
+  .separate { /* Det blå båndet mellom seksjonene*/
+  position: relative;
+  background-color: #2A8084;
+  height: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 75%;
+  margin: auto;
+
+  }
+
+  #pil_h{
+    float: right;
+    top: 200px;
+    right: auto;
+  }
+
+
+  #pil_v {
+    float: left;
+    top: 200px;
+  }
+
+
+  #turtle {
+    float:right;
+  }
+
+  #article_number {
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bolder;
+    border: 5px;
+  }
+
+  #media{
+    text-align: center;
+  }

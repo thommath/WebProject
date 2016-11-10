@@ -4,34 +4,6 @@ WRITTEN BY: Martin Bondkall Gjerde
 PURPOSE: Style the image slideshow
 */
 
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#content-section{
-  background-color: #E5A02E;
-}
-
-#content-container{
-  background-color: #E5A02E;
-  width: 800px;
-}
-
-h1{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
 .row:after {
   content: "";
   display: table;
@@ -41,6 +13,7 @@ h1{
 .column {
   float: left;
   width: 25%;
+
 }
 
 .modal {

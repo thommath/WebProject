@@ -1,3 +1,8 @@
+<!--
+WRITTEN BY: Thomas Lund Mathisen
+DATE: 09.11.2016
+PURPOSE: A page that contains examples of how to use the features in the best way on other pages
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +15,6 @@
 
   </head>
   <body>
-
     <header>
       <div id="header_container">
         <div>
@@ -23,76 +27,67 @@
         </div>
         <nav>
           <a href="#" class="navbox">
-              Home
+            Home
           </a>
           <a href="#" id = "media" class="navbox dropbtn" onmouseover="mopen('media_drop_down')"
                                                           onmouseout="mclosetime()">
-              Media
+          Media
           </a>
-              <div id="media_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
-                                                                  onmouseout="mclosetime()">
-                <a href="#">Gallery</a>
-                <a href="#">Videos</a>
-              </div>
-          <a href="#" id="about" class="navbox dropbtn" onmouseover="mopen('about_drop_down')"
-                                                          onmouseout="mclosetime()">
+          <div id="media_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
+              onmouseout="mclosetime()">
+              <a href="#">Gallery</a>
+              <a href="#">Videos</a>
+            </div>
+              <a href="#" id="about" class="navbox dropbtn" onmouseover="mopen('about_drop_down')"
+                                                            onmouseout="mclosetime()">
               About
             </a>
-              <div id="about_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
-                                                                  onmouseout="mclosetime()">
-                <a href="#">About us</a>
-                <a href="#">About Panbot</a>
-                <a href="#">Our vision</a>
-              </div>
+            <div id="about_drop_down" class="dropdown_content" onmouseover="mcancelclosetime()"
+            onmouseout="mclosetime()">
+            <a href="#">About us</a>
+            <a href="#">About Panbot</a>
+            <a href="#">Our vision</a>
+          </div>
           <a href="#" class="navbox">
-              Pangen
+            Pangen
           </a>
         </nav>
-      </div>
+        </div>
     </header>
 
-    <section id="content-section">
-      <div id="content-container">
-        <br><br><br><br>
-        <h1>PanBot!</h1>
+    <img src="media/img/blog_img/Goat.jpg" alt="You found me!" class="delete"/>
 
-        <br>
-      </div>
+
+    <section id="content-section">
+    <div id="content-container">
+      <br><br><br><br>
+      <h1>PanBot!</h1>
+      <p>
+        Hello, welcome to panbot!
+      </p>
+      <br>
+    </div>
     </section>
 
     <section id="box-section">
-      <div id="box-container">
-        <div class="box">
-          <a href="">Media</a>
-          <h2>Info</h2>
-          <p>
-            Link to info.
-          </p>
-          <button type="button" name="button">Click Me!</button>
-        </div>
-        <div class="box">
-          <h2>Media</h2>
-          <p>
-            Link to media.
-          </p>
-          <button type="button" name="button">Click Me!</button>
-        </div>
-        <div class="box">
-          <h2>PanGen</h2>
-          <p>
-            Link to PanGen.
-          </p>
-          <button type="button" name="button">Click Me!</button>
-        </div>
-      </div>
+      <section id="box-container" class="container">
+
+      </section>
     </section>
 
-    <section id="footer">
-      <h2>Contact</h2>
-      <p>
-        Contact on us tqitter or some tefd else
-      </p>
-    </section>
     <script src="js/drop_down_meny.js" charset="utf-8"></script>
+    <script src="/WebProject/WebPage/js/modulize.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+      var container = document.createElement("section");
+      loadDoc(container, "box", false, ["Digns", "Her er mye fin info"]);
+      loadDoc(container, "box", false, ["Dumpeditt", "Wiho lorem ipseifmdsk fdsfj dsakd easd"]);
+      loadDoc(container, "box", false, ["Wioioioioi", "Hola hola hola"]);
+      setTimeout(function(){
+        console.log(container);
+        document.getElementById("box-container").appendChild(container);
+
+      }, 100);
+    </script>
   </body>
 </html>

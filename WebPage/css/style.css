@@ -16,7 +16,7 @@ body{
 }
 
 #content-container {
-  background-color: red;
+
 }
 
 #box-section{
@@ -65,4 +65,15 @@ body{
     width: 100%;
     margin: 10px auto;
   }
+}
+
+figure {
+  align-self: center;
+}
+
+figcaption{
+  font-size: 13px;
+  font-family: sans-serif;
+  background-color: #E5D8B5;
+  text-align: center;
 }

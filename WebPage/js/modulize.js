@@ -26,7 +26,7 @@ function loadDoc(container, module, first, input=[]) {
 }
 
 function setup(){
-  loadDoc(document.head, "head", false);
+  loadDoc(document.head, "head", true);
   loadDoc(document.body, "header", true);
   loadDoc(document.body, "footer", false);
 
