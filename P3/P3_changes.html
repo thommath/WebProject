@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>P3_Changes</title>
+  <link rel="stylesheet" href="P3_style.css">
+  <meta charset="utf-8">
+  <script src="js/movingArrow.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <section id="content">
+    <section id="frontpage">
+      <header>
+        <h1>The Pancake Project:</h1>
+        <h3>P3 - Changes</h3>
+        <h4>The Amazing Pancake Printing Robot</h4>
+        <hr>
+        <p>
+          "We believe in the future! We will make the world <br>
+          a better place with our superb pancakes"
+        </p>
+      </header>
+
+      <div id="arrow">
+        <a href="#table-of-content" id="arrow-link">
+          <div id="arrow-down">
+            &darr;
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="table-of-content">
+      <h3>Table of Contents</h3>
+      <ol>
+        <li><a href="#client">Client Details </a></li>
+        <li><a href="#structure">Structural Changes </a></li>
+        <li><a href="#design">Design Changes</a></li>
+        <li><a href="#js">Javascript Functions</a></li>
+        <li><a href="#plan">Plan Changes</a></li>
+      </ol>
+
+      <p id="navn">
+        Anniken Sandøy, Martin Bondkall Gjerde, Maria Ivashentseva, Martin Stenmann Westergaard, Thomas Lund Mathisen <br> IT2805 ~ 10. November 2016
+      </p>
+    </section>
+    <article id="client">
+      <h3>1. Client Details</h3>
+      <ul>
+        <li>Client name: PanBot</li>
+        <li>Contact person: Maria Ivashentseva</li>
+      </ul>
+      <p>
+        Our client for this project is a student project that revolves around making a pancake printing robot, PanBot for short. The project is led by two students, Maria Ivashentseva and Thomas Lund Mathisen.
+      </p>
+    </article>
+
+    <article id="structure">
+      <h3>1. Structural changes</h3>
+
+      <!-- <img id="map" src="mockups/NavStructure.png" alt="Sitemap"> -->
+      <h4>Folders</h4>
+      <p> Our structure has not gone through a lot of transformations, but some
+          folders have been either removed or added where we've needed them to make
+          things more easily accessible for the programmers. Other things have been
+          renamed as we made them, to make it easier to understand what it is. The
+          major points will be exlained later in P3.</p>
+      <h4>Index changes</h4>
+      <p>One notable mention is that we've removed the media index page, and decided
+        to mainly use the blog index as the gate that links to both media and images.
+        The same goes for the About page, that is now exchanged for another index.html
+        and merged with about_panbot.html. Mostly we realised that having two "gate"
+        htmls would mean more clicking for people to get where they wanted. Bad design
+        bro.</p>
+      <h4>Style.css</h4>
+      <p>Originally we were going to have one style.css for the whole website, but
+          in order to make bugfixing and altering easier, there are now one for the
+          header, one for footer and one for body. In addition to some of the pages
+          that seemed to need a lot of individual styling.</p>
+      <h4>Page names</h4>
+      <p>When it comes to page names, we've got the addition of several new index.html.
+          These are mostly sites like blog.html, pangen.html, about_panbot.html, etc.
+          The reason for this being that we would then be able to make the URLs prettier
+          and easier to remember. Instead of having to access panbot.com/media/blog.html,
+          the blog will now be accessible through panbot.com/media. Or something similiar
+          depending on where we place the webpage on the great internet.</p>
+
+    </article>
+
+    <article id="design">
+      <h3>2. Design Changes</h3>
+
+        <h4>Colors</h4>
+        <img class="mockups" src="colors.png" width="10px" height="10px" alt="farger">
+          <p>As we got closer to a complete site, we found that four colors were a bit too
+            much, and decided to remove one of them. In addition the beige color was replaced
+            with a whiter #FAFAFA to give the website a cleaner look, and complimenting the
+            blue and orange better.</p>
+        <h4>Fonts</h4>
+          <p>We tested several different fonts and decided to go for "Press Start 2P" for
+            the header and menus up there, as it was slighty reminicent of robots so we
+            found it fitting. For the rest of the site we've decided to go for a less stylized font, "" </p>
+        <h4>Link styles</h4>
+          <p>The part about having an underline under all links have changed a bit, as we assume the user
+            will understand that the buttons on the page are actually buttons which link to other pages on the
+            site. The underline will be used if there is a link in a text instead.</p>
+        <h4>Logo</h4>
+          <img id="logo" src="logo.jpg" width="600" alt="logo">
+          <p>Our logo is made by a fellow grapical design student, and portrays a small
+            cute robot, framed in, and sitting on top of a pile of pancakes. This was
+            slightly altered in that the robot was moved in front of the text and the
+            font was changed.<p>
+        <h4>Scaling</h4>
+          <p>As we found time to be an issue, we decided to neglect the scaling and will
+            focus on maximising the usablility on computer screens rather than smaller devices. </p>
+        <h4>Layout</h4>
+          <p>The layout of the gallery has been changed most drasticly. Where instead of
+            the slider at the bottom with several images, it's currently restricted to four.
+            To counter this we'll add images at the bottom instead. There is also
+            no color transition between the thumbnails and the larger image, which was
+            originally planned.</p>
+          </article>
+
+    <article id="js">
+      <h3>3. Javascript funtions</h3>
+
+        <h4>Dropdown menu</h4>
+         <p> No change, this is still implemented in the header and makes for easy navigation between the pages. </p>
+        <h4>Carousel -> Slideshow</h4>
+         <p>Carousel.js has become slideshow.js. This has been changed slightly as
+           the other function was a bit too complicated for us, and now we've got
+           4 static images under the larger one on top. If you click one of the
+           thumbnails, the small image takes the place of the large one. </p>
+        <h4>Canvas -> PanGen</h4>
+            <p>We changed the name of canvas to become PanGen(Pancake Generator),
+            and changed the design on some of the buttons, adding a slider for size
+            of the brush.</p>
+        <h4>Dynamic Time box -> Pancake Advisor</h4>
+            <p>Yet another name change and it's now known as Pancake Advisor. One
+              would belive that we'd learn to keep the original names, but nooo.</p>
+        <h4>Magnifying pictures</h4>
+            <p>This function was completely dropped as  </p>
+        <h4>Let It Rain</h4>
+            <p>This javascript function is completely new! It's an easteregg hidden
+              somewhere on the website, can you find it? (Hint: It's on every page.)
+              We decided that we needed to add a bit of fun on the page, and this is
+              the result.</p>
+       </article>
+
+    <section id="plan">
+      <h3>4. Plan</h3>
+
+        <ul>
+          <li>index.html</li>
+          <li>media/</li>
+          <ul>
+            <li>index.html</li>
+            <li>images.html</li>
+            <li>videos.html</li>
+          </ul>
+          <li>about/</li>
+          <ul>
+            <li>index.html</li>
+            <li>about_us.html</li>
+            <li>our_vision.html</li>
+          </ul>
+          <li>pangen/</li>
+          <ul>
+            <li>pangen.html</li>
+          </ul>
+          <li>images/</li>
+          <ul>
+            <li>image_1</li>
+            <li>image_2</li>
+            <li>...</li>
+            <li>image_n</li>
+          </ul>
+          <li>videos/</li>
+          <ul>
+            <li>video_1.mp4</li>
+            <li>video_1.ogv</li>
+            <li>video_1.webm</li>
+            <li>video_2.mp4</li>
+            <li>video_2.ogv</li>
+            <li>video_2.webm</li>
+          </ul>
+          <li>modularity/</li>
+          <ul>
+            <li>header.html</li>
+            <li>footer.html</li>
+            <li>box_elements.html</li>
+            <li>showreel.html</li>
+          </ul>
+          <li>js/</li>
+            <ul>
+              <li>letitrain.js</li>
+              <li>modal.js</li>
+              <li>modulize.js</li>
+              <li>pangen.js</li>
+              <li>slideshow.js</li>
+
+            </ul>
+            <li>css/</li>
+              <ul>
+                <li>Media/</li>
+                <ul>
+                  <li>blog.css</li>
+                  <li>img_style.css</li>
+                  <li>video_style.css</li>
+                </ul>
+                <li>about.css</li>
+                <li>footer.css</li>
+                <li>frontpage.css</li>
+                <li>header.css</li>
+                <li>style.css</li>
+              </ul>
+            </ul>
+            <br>
+      </section>
+
+      <section id="table">
+      <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg .tg-yw4l{vertical-align:top}
+      </style>
+
+      <h4> Development plan revisited</h4>
+      <p>A list of what was done by who in the end, and notes on eventual changes.</p>
+      <table class="tg">
+        <tr>
+          <th class="tg-yw4l">Task</th>
+          <th class="tg-yw4l">Description</th>
+          <th class="tg-yw4l">In charge</th>
+          <th class="tg-yw4l">Done by</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">style.css</td>
+          <td class="tg-yw4l">Standard template design that will be used on all the webpages</td>
+          <td class="tg-yw4l">Anniken</td>
+          <td class="tg-yw4l">Thomas<br>Martin G.<br>Martin W.</td>
+          <th class="tg-yw4l">One style.css turned into many. Now we've got 8.</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">index.html</td>
+          <td class="tg-yw4l">The main media page, featuring link to the galleries and the blog</td>
+          <td class="tg-yw4l">Martin W</td>
+          <th class="tg-yw4l">Martin W, Thomas</th>
+          <th class="tg-yw4l">We now have several index.html depending on which subcategory of the page you're accessing. This makes the links easier to remember for visitors.</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">blog.html</td>
+          <td class="tg-yw4l">Page for the log entries of the development team</td>
+          <td class="tg-yw4l">Martin W</td>
+          <th class="tg-yw4l">Martin W</th>
+          <th class="tg-yw4l">This page was merged with the media.html to make a new index.html.</th>
+        <tr>
+          <td class="tg-yw4l">images.html</td>
+          <td class="tg-yw4l">Image gallery</td>
+          <td class="tg-yw4l">Martin G</td>
+          <th class="tg-yw4l">Martin G</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">video.html</td>
+          <td class="tg-yw4l">Video gallery</td>
+          <td class="tg-yw4l">Martin G</td>
+          <th class="tg-yw4l">Martin G</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">about_us.html</td>
+          <td class="tg-yw4l">Page for indtroducing the main actors that initiated the project</td>
+          <td class="tg-yw4l">Martin W</td>
+          <th class="tg-yw4l">Martin W</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">about_panbot.html</td>
+          <td class="tg-yw4l">Page about the project</td>
+          <td class="tg-yw4l">Masha </td>
+          <th class="tg-yw4l">Martin W</th>
+          <th class="tg-yw4l">Now the index.html file for the About section with links to both about_us.html and our_vision.html.</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">Our_vision.html</td>
+          <td class="tg-yw4l">Page about the future goals and plan for the project</td>
+          <td class="tg-yw4l">Masha</td>
+          <th class="tg-yw4l">Martin W</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">drop_down_menu.js</td>
+          <td class="tg-yw4l">Drop down menues for the header</td>
+          <td class="tg-yw4l">Masha</td>
+          <th class="tg-yw4l">Masha</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">image_transition.js</td>
+          <td class="tg-yw4l">Slideshow function for the media partitions of the website</td>
+          <td class="tg-yw4l">Thomas</td>
+          <th class="tg-yw4l">Martin G</th>
+          <th class="tg-yw4l">New name: slideshow.js</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">canvas.js</td>
+          <td class="tg-yw4l">The function for the drawing application of PanGen</td>
+          <td class="tg-yw4l">Thomas</td>
+          <th class="tg-yw4l">Thomas, Masha</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">magnify_image.js</td>
+          <td class="tg-yw4l">A function for the overlay that will appear once pictures/videos are clicked</td>
+          <td class="tg-yw4l">Martin G</td>
+          <th class="tg-yw4l">Deleted</th>
+          <th class="tg-yw4l">We decided to not implement this function.</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">header.html</td>
+          <td class="tg-yw4l">The main header that will stay the same across all pages</td>
+          <td class="tg-yw4l">Thomas</td>
+          <th class="tg-yw4l">Thomas</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">box.html</td>
+          <td class="tg-yw4l">Modulated box elements that will be used across the website</td>
+          <td class="tg-yw4l">Thomas</td>
+          <th class="tg-yw4l">Thomas</th>
+          <th class="tg-yw4l">Notes</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">dynamic_window.js</td>
+          <td class="tg-yw4l">Function imbeded in header that advices people what to eat at differing times of the day</td>
+          <td class="tg-yw4l">Thomas</td>
+          <th class="tg-yw4l">Martin W</th>
+          <th class="tg-yw4l">Changed name and is now known as pancake_advisor.html</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">letitrain.js</td>
+          <td class="tg-yw4l">Easteregg that makes it rain.</td>
+          <td class="tg-yw4l">New</td>
+          <th class="tg-yw4l">Anniken</th>
+          <th class="tg-yw4l">This was an idea we had later in the production.</th>
+          </tr>
+      </table>
+      <br>
+    </section>
+    <footer> <p id="navn">The PanBot Project <br> By: Anniken Sandøy, Martin Bondkall Gjerde, Maria Ivashentseva, Martin Stenmann Westergaard, Thomas Lund Mathisen<br> Web Technology - IT2805 </p></footer><br>
+  </section>
+</body>
+</html>
