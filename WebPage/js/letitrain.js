@@ -1,3 +1,4 @@
+
 /*
 WRITTEN BY: Anniken Sandoey
 PURPOSE: A fun little easteregg
