@@ -28,7 +28,7 @@ it ends with a random timeout before it starts over again. A lot of the variable
 have been assigned the random element in them to make the rain more dynamic. */
 function PancakeDrop(){
     var pancake = document.createElement("IMG");
-    pancake.setAttribute("src", "pancake.png");
+    pancake.setAttribute("src", "/WebProject/WebPage/img/pancake.png");
     pancake.style.maxWidth= 100+Math.random()*150 +"px";
     pancake.style.position="absolute";
     pancake.style.left=Math.random()*window.innerWidth +"px";
