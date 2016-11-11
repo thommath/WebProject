@@ -21,20 +21,21 @@ PURPOSE: View videos of PanBot
         </p>
         <br>
       </div>
-      <div>
-        <script type="text/javascript">
-
-          var container = document.createElement("section");
-          loadDoc(container, "video_box", false, ["This is an example video", "/martiwes/videos/example1.mp4"]);
-          loadDoc(container, "video_box", false, ["Stay tuned for videos of panbot", "/martiwes/videos/example1.mp4"]);
-          setTimeout(function(){
-            console.log(container);
-            document.getElementById("box-container").appendChild(container);
-
-          }, 100);
-        </script>
-      </div>
     </section>
+
+    <div>
+      <script type="text/javascript">
+
+        var container = document.createElement("section");
+        loadDoc(container, "video_box", false, ["This is an example video", "/martiwes/videos/example1.mp4"]);
+        loadDoc(container, "video_box", false, ["Stay tuned for videos of panbot", "/martiwes/videos/example1.mp4"]);
+        setTimeout(function(){
+          console.log(container);
+          document.getElementById("box-container").appendChild(container);
+
+        }, 100);
+      </script>
+    </div>
 
     <section id="box-section">
       <div id="box-container">
