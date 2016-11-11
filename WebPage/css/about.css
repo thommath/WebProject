@@ -1,15 +1,14 @@
 /* Farger_ Orangsje: #E5A02E Blå: #2A8084 Beige: #E5D8B5 */
 
   .bilde_artikkel{ /*Bildet inne i artikkelen*/
-    border: 5px;
-    border-color:  #2A8084;
-    border-style: solid;
     margin:10px;
     height: 200px;
+    float: right;
   }
 
   #turtle {
     float:right;
+    height: 200px;
   }
 
   #media-section{

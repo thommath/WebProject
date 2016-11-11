@@ -4,11 +4,14 @@
 <!--
 Code in this html document is based on this tutorial: http://www.w3schools.com/howto/howto_js_lightbox.asp
 WRITTEN BY: Martin Bondkall Gjerde
+DATE: 03.11.2016
 PURPOSE: Show and view images
 -->
 
   <head>
-    <link rel="stylesheet" type="text/css" href="/WebProject/WebPage/css/media_css/img_style.css">
+    <title>Images</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/martiwes/css/media_css/img_style.css">
   </head>
   <body>
 
@@ -18,43 +21,47 @@ PURPOSE: Show and view images
         <div id="myModal" class="modal">
           <div class="modal-content">
 
+            <!-- Pictures that will show as a big picture-->
+
             <div class="mySlides">
               <div class="numbertext">1 / 4</div>
-              <img src="/WebProject/WebPage/img/example1.jpg">
+              <img src="/martiwes/img/example1.jpg" alt="printing">
             </div>
 
             <div class="mySlides">
               <div class="numbertext">2 / 4</div>
-              <img src="/WebProject/WebPage/img/example2.jpg">
+              <img src="/martiwes/img/example2.jpg" alt="yummy">
             </div>
 
             <div class="mySlides">
               <div class="numbertext">3 / 4</div>
-              <img src="/WebProject/WebPage/img/example3.jpg">
+              <img src="/martiwes/img/example3.jpg" alt="robo-butler">
             </div>
 
             <div class="mySlides">
               <div class="numbertext">4 / 4</div>
-              <img src="/WebProject/WebPage/img/example4.jpg">
+              <img src="/martiwes/img/example4.jpg" alt="pancake animals">
             </div>
 
-            <!-- Bruker piler som knapper som er hentet med unicoden under -->
+            <!--Use arrows as buttons. We get the arrows from the unicode showed under-->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
 
             <div class="column">
-              <img class="demo cursor" src="/WebProject/WebPage/img/example1.jpg" onclick="currentSlide(1)" alt="">
+
+              <!--All the pictures will show as small pictures under the big picture-->
+              <img class="demo cursor" src="/martiwes/img/example1.jpg" onclick="currentSlide(1)" alt="printing">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/WebProject/WebPage/img/example2.jpg" onclick="currentSlide(2)" alt="">
+              <img class="demo cursor" src="/martiwes/img/example2.jpg" onclick="currentSlide(2)" alt="yummy">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/WebProject/WebPage/img/example3.jpg" onclick="currentSlide(3)" alt="">
+              <img class="demo cursor" src="/martiwes/img/example3.jpg" onclick="currentSlide(3)" alt="robo-butler">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/WebProject/WebPage/img/example4.jpg" onclick="currentSlide(4)" alt="">
+              <img class="demo cursor" src="/martiwes/img/example4.jpg" onclick="currentSlide(4)" alt="pancake animals">
             </div>
           </div>
         </div>
@@ -62,10 +69,9 @@ PURPOSE: Show and view images
       </div>
     </section>
 
-
-    <script src="/WebProject/WebPage/js/modulize.js" charset="utf-8"></script>
-    <script src="/WebProject/WebPage/js/drop_down_meny.js" charset="utf-8"></script>
-    <script src="/WebProject/WebPage/js/letitrain.js" charset="utf-8"></script>
-    <script src="/WebProject/WebPage/js/slideshow.js"></script>
+    <script src="/martiwes/js/letitrain.js" charset="utf-8"></script>
+    <script src="/martiwes/js/drop_down_meny.js" charset="utf-8"></script>
+    <script src="/martiwes/js/modulize.js" charset="utf-8"></script>
+    <script src="/martiwes/js/slideshow.js"></script>
   </body>
 </html>

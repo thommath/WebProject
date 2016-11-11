@@ -1,3 +1,4 @@
+
 /*
 WRITTEN BY: Anniken Sandoey
 PURPOSE: A fun little easteregg
@@ -10,7 +11,8 @@ var running = 0;
 
 /* This is the main function that calls the other ones. */
 function setup_letItRain(){
-  document.getElementById('letitrain').onclick = function(){
+  console.log("Lurer på hva som skjer om du trykker på roboten... :0")
+  document.getElementById('logo_pic').onclick = function(){
     if(running == 0){
       var body = document.body,
           html= document.documentElement;
@@ -28,7 +30,7 @@ it ends with a random timeout before it starts over again. A lot of the variable
 have been assigned the random element in them to make the rain more dynamic. */
 function PancakeDrop(){
     var pancake = document.createElement("IMG");
-    pancake.setAttribute("src", "/WebProject/WebPage/img/pancake.png");
+    pancake.setAttribute("src", "/martiwes/img/pancake.png");
     pancake.style.maxWidth= 100+Math.random()*150 +"px";
     pancake.style.position="absolute";
     pancake.style.left=Math.random()*window.innerWidth +"px";
@@ -48,7 +50,7 @@ function fallingPancake(){
   rainingPancakes.forEach(function (element, i){
 
     element.top = element.top + element.speed;
-    console.log(element.top + " " + element.speed);
+    //console.log(element.top + " " + element.speed);
     element.style.top = element.top + "px";
 
     if(element.y > height){

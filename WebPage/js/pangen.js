@@ -2,9 +2,16 @@ coor_array = [];
 stroke_array = [];
 let ctx;
 
+setInterval(function () {
+  console.log(coor_array);
+}, 5000)
+
 function setup_pangen(){
   ctx = document.getElementById('canvas').getContext('2d');
-  ctx.fillRect(0, 0, 100, 100);
+  ctx.font="50px Georgia";
+  ctx.fillText("PanGen", 10, 120);
+  ctx.font="12px Georgia";
+  ctx.fillText("Start drawing and press submit to print your own pancake!", 30, 150);
   ctx.lineWidth=10;
   console.log("Canvas setup done");
 }
@@ -19,7 +26,9 @@ function thickness(elem){
 
 function mouse_down(evt){
   down = true;
-  stroke_array.push({x:evt.clientX-290, y:evt.clientY-200, z:ctx.lineWidth});
+  width = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+  height = document.getElementById('heightHeader').offsetHeight + 74;
+  stroke_array.push({x:evt.clientX-(width/2-250), y:evt.clientY-height, z:ctx.lineWidth});
 }
 
 function mouse_up(evt){
@@ -38,8 +47,10 @@ function update_color(){
 }
 
 function mouse_move(evt){
-  if(down==true && Math.pow(stroke_array[stroke_array.length-1].x-evt.clientX+8, 2)+Math.pow(stroke_array[stroke_array.length-1].y-evt.clientY+8, 2)>1000/(ctx.lineWidth)){
-    stroke_array.push({x:evt.clientX-290, y:evt.clientY-200, z:ctx.lineWidth});
+  if(down==true && Math.pow(stroke_array[stroke_array.length-1].x-evt.clientX-200, 2)+Math.pow(stroke_array[stroke_array.length-1].y-evt.clientY-180, 2)>1000/(ctx.lineWidth)){
+    width = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+    height = document.getElementById('heightHeader').offsetHeight + 74;
+    stroke_array.push({x:evt.clientX-(width/2-250), y:evt.clientY-height, z:ctx.lineWidth});
     draw();
   }
 }

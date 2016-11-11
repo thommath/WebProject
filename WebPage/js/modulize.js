@@ -11,10 +11,11 @@ function basicLoad(){
   if(basicCounter == 0){
     remove_loading_elements();
     loadModules();
+    moduleLoaded();
   }
 }
 
-let moduleCounter = 0;
+let moduleCounter = 1;
 function moduleLoaded(){
   moduleCounter -= 1;
   if(moduleCounter == 0){
@@ -50,7 +51,7 @@ function loadDoc(container, module, first, input=[], callback=moduleLoaded) {
       callback();
     }
   };
-  xhttp.open("GET", "/WebProject/WebPage/module/" + module + ".html", true);
+  xhttp.open("GET", "/martiwes/module/" + module + ".html", true);
   xhttp.send();
 }
 

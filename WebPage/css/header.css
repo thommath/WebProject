@@ -26,6 +26,9 @@ header a{
   margin-top: 30px;
   position: relative;
 }
+#heightHeader{
+  height: 15%;
+}
 .circle{
   border: 7px solid #E5A02E;
   border-radius: 100px;
@@ -68,7 +71,7 @@ header a{
     height: 260px;
   }
   .navbox{
-//    display: none;
+      display: none;
       display: block;
   }
   #header_container nav{
