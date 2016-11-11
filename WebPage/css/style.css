@@ -27,6 +27,10 @@ section:nth-child(odd){
 }
 #box-section{
   padding: 20px 0;
+  background-color: #E5A02E;
+}
+#heightContainer {
+  height: 75%;
 }
 
 

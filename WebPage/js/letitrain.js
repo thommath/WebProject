@@ -11,7 +11,8 @@ var running = 0;
 
 /* This is the main function that calls the other ones. */
 function setup_letItRain(){
-  document.getElementById('logo_text').onclick = function(){
+  console.log("Lurer på hva som skjer om du trykker på roboten... :0")
+  document.getElementById('logo_pic').onclick = function(){
     if(running == 0){
       var body = document.body,
           html= document.documentElement;
@@ -49,7 +50,7 @@ function fallingPancake(){
   rainingPancakes.forEach(function (element, i){
 
     element.top = element.top + element.speed;
-    console.log(element.top + " " + element.speed);
+    //console.log(element.top + " " + element.speed);
     element.style.top = element.top + "px";
 
     if(element.y > height){

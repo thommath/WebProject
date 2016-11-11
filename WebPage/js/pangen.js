@@ -1,4 +1,11 @@
-coor_array = [];
++0
+
+
+
+
+
+
+olcoor_array = [];
 stroke_array = [];
 let ctx;
 
