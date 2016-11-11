@@ -1,7 +1,6 @@
 /*
 This javascript is based on this tutorial: http://www.w3schools.com/howto/howto_js_slideshow.asp
 WRTITTEN BY: Martin Bondkall Gjerde
-DATE: 26.10.2016
 PURPOSE: Go back and forth between content with buttons
 */
 var slideIndex = 1;
