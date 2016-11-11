@@ -6,10 +6,12 @@
     border-style: solid;
     margin:10px;
     height: 200px;
+    float: right;
   }
 
   #turtle {
     float:right;
+    height: 200px;
   }
 
   #media-section{
