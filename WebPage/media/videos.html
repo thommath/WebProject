@@ -16,27 +16,22 @@ PURPOSE: View videos of PanBot
       <div id="content-container">
         <br><br><br><br>
         <h1>PanBot Videos!</h1>
-        <p>
-        Here you can enjoy videos of PanBot!
-        </p>
+        <!--<p>Here you can enjoy videos of PanBot!</p> -->
         <br>
       </div>
     </section>
 
-    <section id="box-section">
-      <div id="box-container">
-      </div>
-    </section>
 
     <script src="/martiwes/js/modulize.js" charset="utf-8"></script>
     <script src="/martiwes/js/drop_down_meny.js" charset="utf-8"></script>
     <script type="text/javascript">
+    //This uses the modulize.js to add videoes with a headline using only one line of code from an array
       var container = document.createElement("section");
       loadDoc(container, "video_box", false, ["Stay tuned for videos of the PanBot", "/martiwes/videos/example1.mp4", "/martiwes/videos/example1.ogv", "/martiwes/videos/example1.webm"]);
       loadDoc(container, "video_box", false, ["This is just an example video", "/martiwes/videos/example1.mp4", "/martiwes/videos/example1.ogv", "/martiwes/videos/example1.webm"]);
       setTimeout(function(){
         console.log(container);
-        document.getElementById("box-container").appendChild(container);
+        document.getElementById("content-container").appendChild(container);
       }, 100);
     </script>
   </body>

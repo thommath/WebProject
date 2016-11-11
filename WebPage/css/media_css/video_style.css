@@ -4,6 +4,9 @@ DATE: 09.11.2016
 PURPOSE: Style the videos.html
 */
 
+h1, h2, p {
+  text-align: center;
+}
 
 video{
   width: 100%;
