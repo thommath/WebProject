@@ -7,7 +7,7 @@ PURPOSE: View videos of PanBot
 -->
   <head>
     <title>Videos</title>
-      <meta charset="utf-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/martiwes/css/media_css/video_style.css">
   </head>
   <body>
@@ -23,27 +23,21 @@ PURPOSE: View videos of PanBot
       </div>
     </section>
 
-    <div>
-      <script type="text/javascript">
-
-        var container = document.createElement("section");
-        loadDoc(container, "video_box", false, ["This is an example video", "/martiwes/videos/example1.mp4"]);
-        loadDoc(container, "video_box", false, ["Stay tuned for videos of panbot", "/martiwes/videos/example1.mp4"]);
-        setTimeout(function(){
-          console.log(container);
-          document.getElementById("box-container").appendChild(container);
-
-        }, 100);
-      </script>
-    </div>
-
     <section id="box-section">
       <div id="box-container">
       </div>
     </section>
 
-
     <script src="/martiwes/js/modulize.js" charset="utf-8"></script>
     <script src="/martiwes/js/drop_down_meny.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var container = document.createElement("section");
+      loadDoc(container, "video_box", false, ["Stay tuned for videos of the PanBot", "/martiwes/videos/example1.mp4"]);
+      loadDoc(container, "video_box", false, ["This is just an example video", "/martiwes/videos/example1.mp4"]);
+      setTimeout(function(){
+        console.log(container);
+        document.getElementById("box-container").appendChild(container);
+      }, 100);
+    </script>
   </body>
 </html>
