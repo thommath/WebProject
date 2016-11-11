@@ -9,7 +9,7 @@ body{
 .section{
   border-top: 2px solid black;
   padding-bottom: 1px;
-//  margin-bottom: -16px;
+  margin-bottom: -16px;
 }
 
 section:nth-child(odd){

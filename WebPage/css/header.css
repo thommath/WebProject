@@ -71,7 +71,7 @@ header a{
     height: 260px;
   }
   .navbox{
-//    display: none;
+      display: none;
       display: block;
   }
   #header_container nav{
