@@ -12,10 +12,6 @@ body{
   margin-bottom: -16px;
 }
 
-section:nth-child(odd){
-  background-color: #E5A02E;
-}
-
 .section > *{
   max-width: 800px;
   margin: 0 auto;
