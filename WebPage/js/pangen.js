@@ -1,6 +1,6 @@
 /*
-Name: Maria Ivashentseva
-Purpouse: Adding functionality to the PanGen canvas element.
+Name: Maria Ivashentseva and Thomas Lund Mathissen
+Purpose: Adding functionality to the PanGen canvas element.
 
 Requirements:
 The user should be able to draw lines on the canvas to get an image up.
@@ -11,21 +11,21 @@ When the user moves the mouse over the pangen the mouse_move will be triggered. 
 When the user clicks the mouse button down it will start a new line in a temp array called stroke_array and it will remeber that the button is down.
 When the user releases the button the mouse_up will be triggered and the stroke will be saved as an array in coor_array
 Each time one of these function is called the draw function is called updating the canvas with the new strokes.
-
 */
 
 /*
 Creating global variables
 */
-let coor_array = [];
-let stroke_array = [];
-let del_array = [];
-let ctx;
-let down = false;
-let color = [255, 255, 200];
+var coor_array = [];
+var stroke_array = [];
+var del_array = [];
+var ctx;
+var down = false;
+let defaultColor = [229, 160, 50];
+var color = defaultColor;
 
 /*
-Logging the stroke elements for debugging purpouses
+Logging the stroke elements for debugging Purposes
 */
 setInterval(function () {
   console.log(coor_array);
@@ -33,7 +33,7 @@ setInterval(function () {
 
 /*
 Name: setup_pangen
-Purpouse: Get elements and set default values + draw a greeting message on the canvas
+Purpose: Get elements and set default values + draw a greeting message on the canvas
 */
 function setup_pangen(){
   ctx = document.getElementById('canvas').getContext('2d');
@@ -48,21 +48,18 @@ function setup_pangen(){
 
 /*
 Name: mouse_down
-Purpouse: remember that the mouse button is pressed and save the first element in the temp array relative to the canvas.
+Purpose: remember that the mouse button is pressed and save the first element in the temp array relative to the canvas.
 */
-
 function mouse_down(evt){
   down = true;
-  width = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-  height = document.getElementById('heightHeader').offsetHeight + 74;//Compensate for header height and title height
-  stroke_array.push({x:evt.clientX-(width/2-250), y:evt.clientY-height, z:ctx.lineWidth});//Calculate with by dividing the screen in two and subtracting half canvas size
+  stroke_array.push(getPoint(evt.clientX, evt.clientY));
+
 }
 
 /*
 Name: mouse_up
-Purpouse: remember mouse button is released, pushing the last stroke to the array if it is a line and not just a point before clearing the temp array
+Purpose: remember mouse button is released, pushing the last stroke to the array if it is a line and not just a point before clearing the temp array
 */
-
 function mouse_up(evt){
   down = false;
   if(stroke_array.length > 1){
@@ -73,41 +70,41 @@ function mouse_up(evt){
 
 /*
 Name: update_color
-Purpouse: Make the color a bit lighter for each time the function is called
+Purpose: Make the color a bit lighter for each time the function is called
 */
-
 function update_color(){
-  color[0] += 0.6;
-  color[1] += 0.7;
+  color[0] += 0.5;
+  color[1] += 0.5;
   color[2] += 0.5;
   ctx.strokeStyle = 'rgb(' + parseInt(color[0]) + ',' + parseInt(color[1]) + ',' + parseInt(color[2]) + ')';
 }
 
 /*
 Name: mouse_move
-Purpouse: Save the current relative position if the mouse is pressed and long enough away from last point
+Purpose: Save the current relative position if the mouse is pressed and long enough away from last point
 */
-
 function mouse_move(evt){
-  width = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-  height = document.getElementById('heightHeader').offsetHeight + 74;
-  if(down==true && Math.pow(stroke_array[stroke_array.length-1].x-evt.clientX-(width/2-250), 2)+Math.pow(stroke_array[stroke_array.length-1].y-evt.clientY-height, 2)>1000/(ctx.lineWidth)){
-    stroke_array.push({x:evt.clientX-(width/2-250), y:evt.clientY-height, z:ctx.lineWidth});
+  if(down==true && Math.pow(stroke_array[stroke_array.length-1].x-(evt.clientX-offsetX()), 2)+ Math.pow(stroke_array[stroke_array.length-1].y-(evt.clientY-offsetY()), 2)>1000/(ctx.lineWidth)){
+    stroke_array.push(getPoint(evt.clientX, evt.clientY));
     draw();
   }
 }
 
 /*
 Name: draw
-Purpouse: Draw each line on the canvas with the right width and color, including the temp line
+Purpose: Draw each line on the canvas with the right width and color, including the temp line
 */
-
 function draw(){
   //Counting the length of each stroke in coor array and stroke array to Calculate the starting color for the pancake
-  let nr = 0;for (i in coor_array){for(let n = 1; n < coor_array[i].length; n++){nr++;}}for (i in stroke_array){nr++;}
+  let nr = 0;
+  for (i in coor_array){
+    for(let n = 1; n < coor_array[i].length; n++){nr++;}
+  }
+
+  for (i in stroke_array){nr++;}
 
   //Setting start color and empyting the canvas
-  color = [255-nr*0.6, 255-nr*0.6, 200-nr*0.6];
+  color = [defaultColor[0]-nr*0.5, defaultColor[1]-nr*0.5, defaultColor[2]-nr*0.5];
   ctx.clearRect(0, 0, 1000, 1000);
 
   //Saving the line width
@@ -144,7 +141,7 @@ function draw(){
 
 /*
 Name: undo
-Purpouse: Remove the last element in coor_array and adding it to a list of deleted strokes
+Purpose: Remove the last element in coor_array and adding it to a list of deleted strokes
 */
 function undo(bamsemoms){
   del_array.push(coor_array.pop());
@@ -153,15 +150,16 @@ function undo(bamsemoms){
 
 /*
 Name: redo
-Purpouse: Remove the last element in deleted strokes and adding to coor_array
+Purpose: Remove the last element in deleted strokes and adding to coor_array
 */
 function redo(bamse){
   coor_array.push(del_array.pop());
   draw();
 }
+
 /*
 Name: thickness
-Purpouse: update the thickness of the brush when the slider is changed
+Purpose: update the thickness of the brush when the slider is changed
 */
 function thickness(elem){
   document.getElementById("thickness").innerHTML=elem.value;
@@ -169,8 +167,36 @@ function thickness(elem){
 }
 
 /*
+Name: getPoint
+Purpose: returns a point relative to the canvas
+*/
+
+function getPoint(mouseX, mouseY){
+  return {x:mouseX-offsetX(), y:mouseY-offsetY(), z:ctx.lineWidth};
+}
+
+/*
+Name: offsetX
+Purpose: get the offset from canvas to the left side
+*/
+function offsetX(){
+  return (window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth)/2-250;
+}
+
+/*
+Name: offsetY
+Purpose: get the offset from canvas to the top
+*/
+function offsetY(){
+  if(document.getElementById('heightHeader')){
+    return document.getElementById('heightHeader').offsetHeight + 74;
+  }
+  return 74;
+}
+
+/*
 Name: submit
-Purpouse: Converting the data to the right format and send them to the server
+Purpose: Converting the data to the right format and send them to the server
 */
 function submit(){
   //Adding each stroke to temp_arr on the right format, only points and how thick the stroke is (0 for only moving)
@@ -193,7 +219,7 @@ function submit(){
   var hiddenField = document.createElement("input");
      hiddenField.setAttribute("type", "hidden");
      hiddenField.setAttribute("name", "name");
-     hiddenField.setAttribute("value", "ygrfht"); //TODO fix it S
+     hiddenField.setAttribute("value", "value_draw");
      form.appendChild(hiddenField);
 
   //Adding the json to the form
@@ -203,7 +229,7 @@ function submit(){
      hiddenField2.setAttribute("value", made_for_database);
      form.appendChild(hiddenField2);
 
-  //Append and submit the form 
+  //Append and submit the form
   document.body.appendChild(form);
   form.submit();
 }
