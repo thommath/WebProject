@@ -2,11 +2,14 @@
   position: relative;
   bottom: 0;
   background-color: #2A8084;
-  color: #E5A02E;
   text-align: center;
   max-width: 100%;
   font-size: 1.2em;
   padding: 20px;
+  weight: 130px;
+  font-family: 'Press Start 2P', cursive;
+  color: #E5A02E;
+  text-decoration: none;
 
 }
 #footer > *{
