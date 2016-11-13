@@ -1,52 +1,60 @@
 <!--
 WRITTEN BY: Thomas Lund Mathisen
-DATE: 09.11.2016
-PURPOSE: A page that contains examples of how to use the features in the best way on other pages
+DATE: 12.11.2016
+PURPOSE: The index page to showcase the best and bightest elements of our website.
 -->
 <!DOCTYPE html>
 <html>
   <head>
-
     <title>PanBot</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/martiwes/css/frontpage.css">
     <link rel="shortcut icon" type="image/png" href="/martiwes/img/robotfavicon.png"/>
   </head>
-  <body onload="setup_letItRain()">
-
+  <body>
 
     <img src="img/Goat.jpg" alt="You found me!" class="delete"/>
+
     <div id="heightContainer">
-    <section class="section" id="content-section">
-      <div class="container" id="content-container">
-        <h1>PanBot!</h1>
-        <p>
-          Hello, welcome to panbot!
-        </p>
-        <br>
-      </div>
-    </section>
-
-    <section class="section" id="box-section">
-      <section class="container" id="box-container">
-
+      <section class="section" id="content-section">
+        <div class="container" id="content-container">
+          <h1>PanBot!</h1>
+          <p>
+            Hello, welcome to panbot!
+          </p>
+          <br>
+        </div>
       </section>
-    </section>
-  </div>
+
+      <section class="section" id="box-section">
+        <section class="container" id="box-container">
+          <!--
+            Container for the box module
+          -->
+        </section>
+      </section>
+    </div>
 
 
     <script src="/martiwes/js/letitrain.js" charset="utf-8"></script>
     <script src="/martiwes/js/drop_down_meny.js" charset="utf-8"></script>
     <script src="/martiwes/js/modulize.js" charset="utf-8"></script>
     <script type="text/javascript">
+      /*
+        Modulize script usage:
+        Using the modulize script to load modules into the container element. First loading three boxes and then adding them when the setup is done by overriding the setup_done function.
+      */
 
       var container = document.createElement("section");
+
+      //@Override
       function loadModules(){
         loadDoc(container, "box", false, ["Digns", "Her er mye fin info"]);
         loadDoc(container, "box", false, ["Dumpeditt", "Wiho lorem ipseifmdsk fdsfj dsakd easd"]);
         loadDoc(container, "box", false, ["Wioioioioi", "Hola hola hola"]);
       }
 
+      //@Override
       function setup_done(){
         document.getElementById("box-container").appendChild(container);
       }
