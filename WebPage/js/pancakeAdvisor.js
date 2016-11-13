@@ -1,4 +1,8 @@
-<script type="text/javascript">
+
+function runClock {
+  setInterval(checkTime, 1000);
+}
+
 function checkTime() {
   var d, hours, mins, day;
      d = new Date(); // current time
@@ -49,6 +53,5 @@ function checkTime() {
       document.getElementById("greeting").innerHTML = greetingNight;
       document.getElementById("advice").innerHTML = adviceNight;
     }
-    setInterval(checkTime, 1000);
+
 }
- </script>
